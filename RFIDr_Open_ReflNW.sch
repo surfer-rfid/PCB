@@ -1,0 +1,1066 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 13 17
+Title "RFIDr_Open_ReflNW"
+Date "2019-12-04"
+Rev "A"
+Comp "Superlative Semiconductor LLC"
+Comment1 "Copyright 2021 Superlative Semiconductor LLC."
+Comment2 "Licensed under CERN-OHL-P v2 or later."
+Comment3 "This source provided WITHOUT ANY EXPRESS OR IMPLIED WARRANTY."
+Comment4 "Author: E. Keehr"
+$EndDescr
+Text Label 775  5650 0    60   ~ 0
+PCLK
+$Comp
+L RFIDr_Open_Lib:PE64102 U30
+U 1 1 5585EEF4
+P 3825 4975
+F 0 "U30" H 4425 4775 60  0000 C CNN
+F 1 "PE64102" H 4575 4875 60  0000 C CNN
+F 2 "RFIDr_Open:QFN-12-1EP_2x2mm_Pitch0.5mm_wvias" V 4950 4350 30  0000 C CNN
+F 3 "" H 3825 4975 60  0000 C CNN
+	1    3825 4975
+	1    0    0    -1  
+$EndComp
+Text Label 3325 5675 0    60   ~ 0
+PCLK
+Text Label 5725 5575 0    60   ~ 0
+PCLK
+$Comp
+L RFIDr_Open_Lib:PE64102 U32
+U 1 1 5585F04E
+P 8850 4975
+F 0 "U32" H 9450 4775 60  0000 C CNN
+F 1 "PE64102" H 9600 4875 60  0000 C CNN
+F 2 "RFIDr_Open:QFN-12-1EP_2x2mm_Pitch0.5mm_wvias" V 9975 4350 30  0000 C CNN
+F 3 "" H 8850 4975 60  0000 C CNN
+	1    8850 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:INDUCTOR L10
+U 1 1 5585F239
+P 2625 5675
+F 0 "L10" V 2575 5675 50  0000 C CNN
+F 1 "1.6n" V 2725 5675 50  0000 C CNN
+F 2 "RFIDr_Open:L_0603" V 2475 5675 60  0000 C CNN
+F 3 "" H 2625 5675 60  0000 C CNN
+	1    2625 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:INDUCTOR L9
+U 1 1 5585F31E
+P 2225 3950
+F 0 "L9" V 2175 3950 50  0000 C CNN
+F 1 "3.6n" V 2325 3950 50  0000 C CNN
+F 2 "RFIDr_Open:L_0603" V 2075 3950 60  0000 C CNN
+F 3 "" H 2225 3950 60  0000 C CNN
+	1    2225 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R84
+U 1 1 5585FE08
+P 9800 2600
+F 0 "R84" V 9880 2600 50  0000 C CNN
+F 1 "19" V 9800 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 9730 2600 30  0000 C CNN
+F 3 "" H 9800 2600 30  0000 C CNN
+	1    9800 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R83
+U 1 1 558610DC
+P 1350 2350
+F 0 "R83" V 1430 2350 50  0000 C CNN
+F 1 "10" V 1350 2350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 1280 2350 30  0000 C CNN
+F 3 "" H 1350 2350 30  0000 C CNN
+	1    1350 2350
+	0    1    1    0   
+$EndComp
+Text HLabel 1050 2350 0    60   BiDi ~ 0
+TERM
+Text HLabel 8525 5475 0    60   Input ~ 0
+PEN
+Text HLabel 6425 4975 1    60   Input ~ 0
+PDAT1
+Text HLabel 1475 5050 1    60   Input ~ 0
+PDAT3
+Text HLabel 8425 5725 0    60   Input ~ 0
+PCLK
+Text HLabel 9150 4775 1    60   Input ~ 0
+PDAT0
+$Comp
+L power:VAA #PWR0220
+U 1 1 55A1058C
+P 9150 6225
+F 0 "#PWR0220" H 9150 6075 50  0001 C CNN
+F 1 "VAA" H 9150 6375 50  0000 C CNN
+F 2 "" H 9150 6225 60  0000 C CNN
+F 3 "" H 9150 6225 60  0000 C CNN
+	1    9150 6225
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VAA #PWR0221
+U 1 1 55A1060A
+P 6325 6225
+F 0 "#PWR0221" H 6325 6075 50  0001 C CNN
+F 1 "VAA" H 6325 6375 50  0000 C CNN
+F 2 "" H 6325 6225 60  0000 C CNN
+F 3 "" H 6325 6225 60  0000 C CNN
+	1    6325 6225
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VAA #PWR0222
+U 1 1 55A10664
+P 4125 6225
+F 0 "#PWR0222" H 4125 6075 50  0001 C CNN
+F 1 "VAA" H 4125 6375 50  0000 C CNN
+F 2 "" H 4125 6225 60  0000 C CNN
+F 3 "" H 4125 6225 60  0000 C CNN
+	1    4125 6225
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VAA #PWR0223
+U 1 1 55A1068E
+P 1375 6275
+F 0 "#PWR0223" H 1375 6125 50  0001 C CNN
+F 1 "VAA" H 1375 6425 50  0000 C CNN
+F 2 "" H 1375 6275 60  0000 C CNN
+F 3 "" H 1375 6275 60  0000 C CNN
+	1    1375 6275
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR0224
+U 1 1 55AB4EC3
+P 9900 6550
+F 0 "#PWR0224" H 9900 6300 50  0001 C CNN
+F 1 "GNDA" H 9900 6400 50  0000 C CNN
+F 2 "" H 9900 6550 60  0000 C CNN
+F 3 "" H 9900 6550 60  0000 C CNN
+	1    9900 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0225
+U 1 1 55AB5709
+P 8500 5575
+F 0 "#PWR0225" H 8500 5325 50  0001 C CNN
+F 1 "GNDA" V 8500 5375 50  0000 C CNN
+F 2 "" H 8500 5575 60  0000 C CNN
+F 3 "" H 8500 5575 60  0000 C CNN
+	1    8500 5575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0226
+U 1 1 55AB581B
+P 9250 4850
+F 0 "#PWR0226" H 9250 4600 50  0001 C CNN
+F 1 "GNDA" V 9250 4625 50  0000 C CNN
+F 2 "" H 9250 4850 60  0000 C CNN
+F 3 "" H 9250 4850 60  0000 C CNN
+	1    9250 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR0227
+U 1 1 55AB59C5
+P 3725 5575
+F 0 "#PWR0227" H 3725 5325 50  0001 C CNN
+F 1 "GNDA" V 3725 5350 50  0000 C CNN
+F 2 "" H 3725 5575 60  0000 C CNN
+F 3 "" H 3725 5575 60  0000 C CNN
+	1    3725 5575
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0228
+U 1 1 55AB5B5B
+P 4225 4950
+F 0 "#PWR0228" H 4225 4700 50  0001 C CNN
+F 1 "GNDA" V 4225 4725 50  0000 C CNN
+F 2 "" H 4225 4950 60  0000 C CNN
+F 3 "" H 4225 4950 60  0000 C CNN
+	1    4225 4950
+	-1   0    0    1   
+$EndComp
+Text Notes 8650 2150 0    60   ~ 0
+7.5mm/0.5588mm T-line : 25 degrees
+Text Label 8575 5475 0    60   ~ 0
+PEN
+Text HLabel 4125 4700 1    60   Input ~ 0
+PDAT2
+Text Label 8450 5725 0    60   ~ 0
+PCLK
+Text Label 6325 4800 3    60   ~ 0
+PEN
+Text Label 3525 5475 0    60   ~ 0
+PEN
+Text Label 1375 4800 3    60   ~ 0
+PEN
+$Comp
+L Device:C C115
+U 1 1 57F12FC1
+P 8475 2850
+F 0 "C115" H 8590 2896 50  0000 L CNN
+F 1 "20p" H 8590 2805 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 8300 2775 50  0000 C CNN
+F 3 "" H 8475 2850 50  0000 C CNN
+	1    8475 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:INDUCTOR L12
+U 1 1 57F13209
+P 7500 5625
+F 0 "L12" V 7450 5625 50  0000 C CNN
+F 1 "1.6n" V 7600 5625 50  0000 C CNN
+F 2 "RFIDr_Open:L_0603" V 7350 5625 60  0000 C CNN
+F 3 "" H 7500 5625 60  0000 C CNN
+	1    7500 5625
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:INDUCTOR L11
+U 1 1 57F136DF
+P 7075 3925
+F 0 "L11" V 7025 3925 50  0000 C CNN
+F 1 "3.6n" V 7175 3925 50  0000 C CNN
+F 2 "RFIDr_Open:L_0603" V 6925 3925 60  0000 C CNN
+F 3 "" H 7075 3925 60  0000 C CNN
+	1    7075 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C114
+U 1 1 57F13E6C
+P 7075 4675
+F 0 "C114" H 7190 4721 50  0000 L CNN
+F 1 "5.2p" H 7190 4630 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 6900 4725 30  0000 C CNN
+F 3 "" H 7075 4675 50  0000 C CNN
+	1    7075 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C112
+U 1 1 57F17BF6
+P 2225 4700
+F 0 "C112" H 2340 4746 50  0000 L CNN
+F 1 "5.2p" H 2340 4655 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 2075 4750 30  0000 C CNN
+F 3 "" H 2225 4700 50  0000 C CNN
+	1    2225 4700
+	1    0    0    -1  
+$EndComp
+Text Notes 4900 2200 0    60   ~ 0
+7.5mm/0.5588mm T-line : 27.77 degrees
+$Comp
+L Device:C C113
+U 1 1 57F19F53
+P 3550 2825
+F 0 "C113" H 3665 2871 50  0000 L CNN
+F 1 "15p" H 3665 2780 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 3375 2750 50  0000 C CNN
+F 3 "" H 3550 2825 50  0000 C CNN
+	1    3550 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0229
+U 1 1 57F20D70
+P 9800 2950
+F 0 "#PWR0229" H 9800 2700 50  0001 C CNN
+F 1 "GNDA" H 9800 2800 50  0000 C CNN
+F 2 "" H 9800 2950 60  0000 C CNN
+F 3 "" H 9800 2950 60  0000 C CNN
+	1    9800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:PE64906 U31
+U 1 1 57FDF918
+P 7125 5975
+F 0 "U31" V 7100 5725 60  0000 R CNN
+F 1 "PE64906" V 7200 5900 60  0000 R CNN
+F 2 "RFIDr_Open:QFN-10-1EP_2x2mm_Pitch0.5mm_wvias" H 7575 6125 30  0000 C CNN
+F 3 "" H 7125 5975 60  0000 C CNN
+	1    7125 5975
+	0    1    -1   0   
+$EndComp
+$Comp
+L RFIDr_Open_Lib:PE64906 U29
+U 1 1 57FE09BA
+P 2175 6050
+F 0 "U29" V 2200 5825 60  0000 R CNN
+F 1 "PE64906" V 2275 6025 60  0000 R CNN
+F 2 "RFIDr_Open:QFN-10-1EP_2x2mm_Pitch0.5mm_wvias" H 2475 6175 30  0000 C CNN
+F 3 "" H 2175 6050 60  0000 C CNN
+	1    2175 6050
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C108
+U 1 1 58022C83
+P 1100 6225
+F 0 "C108" V 1150 6275 50  0000 L CNN
+F 1 "100n" V 1150 5975 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 925 6175 30  0000 C CNN
+F 3 "" H 1100 6225 50  0000 C CNN
+	1    1100 6225
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0230
+U 1 1 58022E27
+P 875 6225
+F 0 "#PWR0230" H 875 5975 50  0001 C CNN
+F 1 "GNDA" H 875 6075 50  0000 C CNN
+F 2 "" H 875 6225 60  0000 C CNN
+F 3 "" H 875 6225 60  0000 C CNN
+	1    875  6225
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C109
+U 1 1 58022FB8
+P 5975 6175
+F 0 "C109" V 6025 6250 50  0000 L CNN
+F 1 "100n" V 6025 5925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 5825 6125 30  0000 C CNN
+F 3 "" H 5975 6175 50  0000 C CNN
+	1    5975 6175
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0232
+U 1 1 58022FBE
+P 5700 6175
+F 0 "#PWR0232" H 5700 5925 50  0001 C CNN
+F 1 "GNDA" H 5700 6025 50  0000 C CNN
+F 2 "" H 5700 6175 60  0000 C CNN
+F 3 "" H 5700 6175 60  0000 C CNN
+	1    5700 6175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C110
+U 1 1 58023054
+P 3650 6200
+F 0 "C110" V 3700 6275 50  0000 L CNN
+F 1 "100n" V 3700 5950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 3500 6200 30  0000 C CNN
+F 3 "" H 3650 6200 50  0000 C CNN
+	1    3650 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0234
+U 1 1 5802305A
+P 3425 6200
+F 0 "#PWR0234" H 3425 5950 50  0001 C CNN
+F 1 "GNDA" H 3425 6050 50  0000 C CNN
+F 2 "" H 3425 6200 60  0000 C CNN
+F 3 "" H 3425 6200 60  0000 C CNN
+	1    3425 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C119
+U 1 1 58023068
+P 8675 6175
+F 0 "C119" V 8725 6250 50  0000 L CNN
+F 1 "100n" V 8725 5925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 8500 6225 30  0000 C CNN
+F 3 "" H 8675 6175 50  0000 C CNN
+	1    8675 6175
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0236
+U 1 1 5802306E
+P 8450 6175
+F 0 "#PWR0236" H 8450 5925 50  0001 C CNN
+F 1 "GNDA" H 8450 6025 50  0000 C CNN
+F 2 "" H 8450 6175 60  0000 C CNN
+F 3 "" H 8450 6175 60  0000 C CNN
+	1    8450 6175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R81
+U 1 1 581E6BE0
+P 1900 4675
+F 0 "R81" V 1980 4675 50  0000 C CNN
+F 1 "10k" V 1900 4675 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 1830 4675 30  0000 C CNN
+F 3 "" H 1900 4675 30  0000 C CNN
+	1    1900 4675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 5725 2125 5725
+Wire Wire Line
+	2225 5625 2125 5625
+Connection ~ 2225 5725
+Wire Wire Line
+	1025 5650 775  5650
+Wire Wire Line
+	4875 5475 4675 5475
+Wire Wire Line
+	4875 4950 4325 4950
+Wire Wire Line
+	4325 4950 4325 5025
+Wire Wire Line
+	4875 6425 4875 5675
+Wire Wire Line
+	4875 5675 4875 5575
+Wire Wire Line
+	4875 5675 4675 5675
+Wire Wire Line
+	4325 6425 4325 6125
+Wire Wire Line
+	4875 5575 4675 5575
+Connection ~ 4875 5675
+Wire Wire Line
+	4225 6425 4225 6125
+Wire Wire Line
+	4125 6125 4125 6200
+Wire Wire Line
+	4125 6200 4125 6225
+Wire Wire Line
+	3775 5675 3325 5675
+Wire Wire Line
+	6525 6425 6525 6025
+Wire Wire Line
+	9900 5475 9700 5475
+Wire Wire Line
+	9900 4900 9350 4900
+Wire Wire Line
+	9350 4900 9350 5025
+Wire Wire Line
+	9900 5575 9900 5675
+Wire Wire Line
+	9900 5675 9900 6425
+Wire Wire Line
+	9900 6425 9900 6550
+Wire Wire Line
+	9900 5675 9700 5675
+Wire Wire Line
+	9350 6425 9350 6125
+Wire Wire Line
+	9900 5575 9700 5575
+Connection ~ 9900 5675
+Wire Wire Line
+	9250 6425 9250 6125
+Wire Wire Line
+	9150 6125 9150 6175
+Wire Wire Line
+	9150 6175 9150 6225
+Wire Wire Line
+	8525 5475 8800 5475
+Wire Wire Line
+	6325 4800 6325 5125
+Wire Wire Line
+	3525 5475 3775 5475
+Wire Wire Line
+	1375 4800 1375 5200
+Wire Wire Line
+	8425 5725 8750 5725
+Wire Wire Line
+	8500 5575 8800 5575
+Wire Wire Line
+	3725 5575 3775 5575
+Wire Wire Line
+	9250 4850 9250 5025
+Wire Wire Line
+	9150 5025 9150 4775
+Wire Wire Line
+	4225 4950 4225 5025
+Wire Notes Line
+	9025 2450 9325 2450
+Wire Notes Line
+	9325 2200 9025 2200
+Wire Notes Line
+	9325 2450 9325 2200
+Wire Notes Line
+	9025 2200 9025 2450
+Wire Wire Line
+	6425 5125 6425 4975
+Wire Wire Line
+	4125 5025 4125 4700
+Wire Wire Line
+	1475 5200 1475 5050
+Wire Wire Line
+	7500 4375 7500 5325
+Wire Wire Line
+	7075 4225 7075 4375
+Wire Wire Line
+	7075 4375 7075 4525
+Wire Wire Line
+	7075 3500 7075 3625
+Wire Wire Line
+	6525 4950 6625 4950
+Wire Wire Line
+	6625 4950 6725 4950
+Wire Wire Line
+	6725 4950 7075 4950
+Wire Wire Line
+	6525 4950 6525 5125
+Connection ~ 6525 6425
+Wire Wire Line
+	7500 6425 7500 5925
+Wire Wire Line
+	1500 2350 2600 2350
+Wire Wire Line
+	2600 2350 2950 2350
+Wire Wire Line
+	2950 2350 3550 2350
+Wire Wire Line
+	3550 2350 8475 2350
+Wire Wire Line
+	9800 2350 9800 2450
+Connection ~ 9350 6425
+Connection ~ 7500 6425
+Connection ~ 9250 6425
+Connection ~ 9900 6425
+Connection ~ 4875 6425
+Connection ~ 4325 6425
+Connection ~ 4225 6425
+Wire Wire Line
+	1675 4950 1675 5200
+Wire Wire Line
+	1575 4950 1675 4950
+Wire Wire Line
+	1675 4950 1900 4950
+Wire Wire Line
+	1900 4950 2225 4950
+Wire Wire Line
+	2625 6425 2625 5975
+Connection ~ 2625 6425
+Wire Wire Line
+	2625 4375 2625 5375
+Wire Wire Line
+	2225 4250 2225 4375
+Wire Wire Line
+	2225 4375 2225 4550
+Wire Wire Line
+	1200 2350 1050 2350
+Wire Notes Line
+	5575 2250 5275 2250
+Wire Notes Line
+	5575 2500 5575 2250
+Wire Notes Line
+	5275 2250 5275 2500
+Wire Notes Line
+	5275 2500 5575 2500
+Wire Wire Line
+	2225 3525 2225 3650
+Connection ~ 9900 4900
+Wire Wire Line
+	2225 3525 3550 3525
+Wire Wire Line
+	3550 3525 4875 3525
+Connection ~ 4875 4950
+Wire Wire Line
+	3550 2975 3550 3525
+Connection ~ 3550 3525
+Wire Wire Line
+	3550 2675 3550 2350
+Connection ~ 3550 2350
+Wire Wire Line
+	9800 2950 9800 2750
+Wire Wire Line
+	6625 6425 6625 6025
+Connection ~ 6625 6425
+Wire Wire Line
+	7075 5650 7225 5650
+Wire Wire Line
+	7225 6425 7225 5650
+Wire Wire Line
+	7225 5650 7225 5550
+Connection ~ 7225 6425
+Wire Wire Line
+	7225 5550 7075 5550
+Connection ~ 7225 5650
+Wire Wire Line
+	6625 5125 6625 4950
+Connection ~ 6625 4950
+Wire Wire Line
+	7075 4950 7075 4825
+Wire Wire Line
+	2225 4950 2225 4850
+Wire Wire Line
+	1575 4950 1575 5200
+Connection ~ 1675 4950
+Wire Wire Line
+	2225 6425 2225 5725
+Wire Wire Line
+	2225 5725 2225 5625
+Wire Wire Line
+	1675 6425 1675 6100
+Connection ~ 2225 6425
+Wire Wire Line
+	1575 6100 1575 6425
+Connection ~ 1675 6425
+Wire Wire Line
+	950  6225 875  6225
+Wire Wire Line
+	1250 6225 1375 6225
+Wire Wire Line
+	5825 6175 5700 6175
+Wire Wire Line
+	3500 6200 3425 6200
+Wire Wire Line
+	8525 6175 8450 6175
+Wire Wire Line
+	6325 6025 6325 6175
+Wire Wire Line
+	6325 6175 6325 6225
+Connection ~ 1900 4950
+Wire Wire Line
+	1475 6100 1475 6425
+Connection ~ 1575 6425
+$Comp
+L power:GNDA #PWR0238
+U 1 1 581E7815
+P 4025 4950
+F 0 "#PWR0238" H 4025 4700 50  0001 C CNN
+F 1 "GNDA" V 4025 4725 50  0000 C CNN
+F 2 "" H 4025 4950 60  0000 C CNN
+F 3 "" H 4025 4950 60  0000 C CNN
+	1    4025 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4025 4950 4025 5025
+Wire Wire Line
+	6425 6425 6425 6025
+Connection ~ 6425 6425
+$Comp
+L Device:R R89
+U 1 1 581E8A8A
+P 6725 4650
+F 0 "R89" V 6805 4650 50  0000 C CNN
+F 1 "10k" V 6725 4650 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 6655 4650 30  0000 C CNN
+F 3 "" H 6725 4650 30  0000 C CNN
+	1    6725 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6725 4075 6725 4500
+Wire Wire Line
+	6725 4800 6725 4950
+Connection ~ 6725 4950
+$Comp
+L power:GNDA #PWR0239
+U 1 1 581EA3A6
+P 9050 4850
+F 0 "#PWR0239" H 9050 4600 50  0001 C CNN
+F 1 "GNDA" V 9050 4625 50  0000 C CNN
+F 2 "" H 9050 4850 60  0000 C CNN
+F 3 "" H 9050 4850 60  0000 C CNN
+	1    9050 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 4850 9050 5025
+Wire Wire Line
+	8750 5675 8800 5675
+Wire Wire Line
+	2625 4375 2225 4375
+Connection ~ 2225 4375
+Wire Wire Line
+	1900 4825 1900 4950
+$Comp
+L power:GNDA #PWR0240
+U 1 1 581F2400
+P 1650 4375
+F 0 "#PWR0240" H 1650 4125 50  0001 C CNN
+F 1 "GNDA" H 1650 4225 50  0000 C CNN
+F 2 "" H 1650 4375 60  0000 C CNN
+F 3 "" H 1650 4375 60  0000 C CNN
+	1    1650 4375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4525 1900 4225
+Wire Wire Line
+	1900 4225 1650 4225
+Wire Wire Line
+	1650 4225 1650 4375
+Wire Wire Line
+	7500 4375 7075 4375
+Connection ~ 7075 4375
+$Comp
+L power:GNDA #PWR0241
+U 1 1 581F2834
+P 6475 4225
+F 0 "#PWR0241" H 6475 3975 50  0001 C CNN
+F 1 "GNDA" H 6475 4075 50  0000 C CNN
+F 2 "" H 6475 4225 60  0000 C CNN
+F 3 "" H 6475 4225 60  0000 C CNN
+	1    6475 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6725 4075 6475 4075
+Wire Wire Line
+	6475 4075 6475 4225
+Wire Wire Line
+	1375 6100 1375 6225
+Wire Wire Line
+	1375 6225 1375 6275
+$Comp
+L RFIDr_Open_Lib:INDUCTOR L5
+U 1 1 59F93528
+P 2950 2825
+F 0 "L5" V 2900 2825 50  0000 C CNN
+F 1 "12n" V 3050 2825 50  0000 C CNN
+F 2 "RFIDr_Open:L_0402" V 2800 2825 60  0000 C CNN
+F 3 "" H 2950 2825 60  0000 C CNN
+	1    2950 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0450
+U 1 1 59F93D2E
+P 2950 3250
+F 0 "#PWR0450" H 2950 3000 50  0001 C CNN
+F 1 "GNDA" H 2950 3100 50  0000 C CNN
+F 2 "" H 2950 3250 60  0000 C CNN
+F 3 "" H 2950 3250 60  0000 C CNN
+	1    2950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3125 2950 3250
+$Comp
+L Device:C C128
+U 1 1 59F96238
+P 4875 4325
+F 0 "C128" H 4990 4371 50  0000 L CNN
+F 1 "22p" H 4990 4280 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" V 4725 4375 30  0000 C CNN
+F 3 "" H 4875 4325 50  0000 C CNN
+	1    4875 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C129
+U 1 1 59F96420
+P 9900 4300
+F 0 "C129" H 10015 4346 50  0000 L CNN
+F 1 "22p" H 10015 4255 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0201" V 9750 4350 30  0000 C CNN
+F 3 "" H 9900 4300 50  0000 C CNN
+	1    9900 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 4475 4875 4550
+Wire Wire Line
+	4875 4550 4875 4950
+Wire Wire Line
+	4875 4950 4875 5475
+Wire Wire Line
+	4875 3525 4875 4175
+Wire Wire Line
+	9900 4450 9900 4725
+Wire Wire Line
+	9900 4725 9900 4900
+Wire Wire Line
+	9900 4900 9900 5475
+Wire Wire Line
+	9900 3500 9900 4150
+$Comp
+L Device:R R93
+U 1 1 59F96DF7
+P 10300 5000
+F 0 "R93" V 10380 5000 50  0000 C CNN
+F 1 "10k" V 10300 5000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 10230 5000 30  0000 C CNN
+F 3 "" H 10300 5000 30  0000 C CNN
+	1    10300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0452
+U 1 1 59F96EA5
+P 10300 5250
+F 0 "#PWR0452" H 10300 5000 50  0001 C CNN
+F 1 "GNDA" H 10300 5100 50  0000 C CNN
+F 2 "" H 10300 5250 60  0000 C CNN
+F 3 "" H 10300 5250 60  0000 C CNN
+	1    10300 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 5150 10300 5250
+Wire Wire Line
+	10300 4850 10300 4725
+Wire Wire Line
+	10300 4725 9900 4725
+Connection ~ 9900 4725
+$Comp
+L Device:R R92
+U 1 1 59F97674
+P 5250 4875
+F 0 "R92" V 5330 4875 50  0000 C CNN
+F 1 "10k" V 5250 4875 50  0000 C CNN
+F 2 "Resistors_SMD:R_0201" V 5180 4875 30  0000 C CNN
+F 3 "" H 5250 4875 30  0000 C CNN
+	1    5250 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0451
+U 1 1 59F976F6
+P 5250 5150
+F 0 "#PWR0451" H 5250 4900 50  0001 C CNN
+F 1 "GNDA" H 5250 5000 50  0000 C CNN
+F 2 "" H 5250 5150 60  0000 C CNN
+F 3 "" H 5250 5150 60  0000 C CNN
+	1    5250 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5025 5250 5150
+Wire Wire Line
+	5250 4725 5250 4550
+Wire Wire Line
+	5250 4550 4875 4550
+Connection ~ 4875 4550
+$Comp
+L Device:R R71
+U 1 1 5E326351
+P 2350 1400
+F 0 "R71" V 2430 1400 50  0000 C CNN
+F 1 "DNI" V 2350 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2250 1375 30  0000 C CNN
+F 3 "" H 2350 1400 30  0000 C CNN
+	1    2350 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR0209
+U 1 1 5E326359
+P 1800 950
+F 0 "#PWR0209" H 1800 700 50  0001 C CNN
+F 1 "GNDA" V 1800 725 50  0000 C CNN
+F 2 "" H 1800 950 60  0000 C CNN
+F 3 "" H 1800 950 60  0000 C CNN
+	1    1800 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR0210
+U 1 1 5E32635F
+P 1700 1975
+F 0 "#PWR0210" H 1700 1725 50  0001 C CNN
+F 1 "GNDA" H 1700 1825 50  0000 C CNN
+F 2 "" H 1700 1975 60  0000 C CNN
+F 3 "" H 1700 1975 60  0000 C CNN
+	1    1700 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0211
+U 1 1 5E326365
+P 2050 1975
+F 0 "#PWR0211" H 2050 1725 50  0001 C CNN
+F 1 "GNDA" H 2050 1825 50  0000 C CNN
+F 2 "" H 2050 1975 60  0000 C CNN
+F 3 "" H 2050 1975 60  0000 C CNN
+	1    2050 1975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1400 2050 1400
+Wire Wire Line
+	2050 1400 2200 1400
+Wire Wire Line
+	2500 1400 2600 1400
+Wire Wire Line
+	1650 1550 1700 1550
+Wire Wire Line
+	1700 1550 1700 1875
+Wire Wire Line
+	1700 1875 1700 1975
+Wire Wire Line
+	1300 950  1300 1000
+Wire Wire Line
+	1300 950  1700 950 
+Wire Wire Line
+	1700 950  1800 950 
+Wire Wire Line
+	1650 1250 1700 1250
+Wire Wire Line
+	1700 1250 1700 950 
+Connection ~ 1700 950 
+Wire Wire Line
+	2050 1975 2050 1875
+$Comp
+L RFIDr_Open_Lib:XGD10402KR D3
+U 1 1 5E32637D
+P 2050 1700
+F 0 "D3" H 2075 1800 30  0000 R CNN
+F 1 "XGD10402KR" H 2200 1625 30  0000 R CNN
+F 2 "Resistors_SMD:R_0402" H 2075 1575 30  0000 C CNN
+F 3 "" H 2050 1700 60  0000 C CNN
+	1    2050 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L RFIDr_Open_Lib:SMA_72970 U23
+U 1 1 5E326384
+P 1650 1250
+F 0 "U23" H 1800 725 60  0000 C CNN
+F 1 "SMA_72970" H 1800 825 60  0000 C CNN
+F 2 "RFIDr_Open:SMA_72970" H 1800 600 30  0000 C CNN
+F 3 "" H 1600 1250 60  0000 C CNN
+	1    1650 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 1875 1700 1875
+Connection ~ 1700 1875
+Wire Wire Line
+	1300 1800 1300 1875
+Connection ~ 2050 1400
+Wire Wire Line
+	5975 5575 5725 5575
+Wire Wire Line
+	2950 2525 2950 2350
+Connection ~ 2950 2350
+Wire Wire Line
+	2600 1400 2600 2350
+Connection ~ 2600 2350
+Wire Wire Line
+	7075 3500 8475 3500
+Wire Wire Line
+	8475 3500 9900 3500
+Wire Wire Line
+	8475 3000 8475 3500
+Connection ~ 8475 3500
+Connection ~ 1375 6225
+Wire Wire Line
+	3800 6200 4125 6200
+Connection ~ 4125 6200
+Wire Wire Line
+	6125 6175 6325 6175
+Connection ~ 6325 6175
+Wire Wire Line
+	8825 6175 9150 6175
+Connection ~ 9150 6175
+Wire Wire Line
+	8750 5725 8750 5675
+Wire Wire Line
+	1475 6425 1575 6425
+Wire Wire Line
+	1575 6425 1675 6425
+Wire Wire Line
+	1675 6425 2225 6425
+Wire Wire Line
+	2225 6425 2625 6425
+Wire Wire Line
+	2625 6425 4225 6425
+Wire Wire Line
+	4225 6425 4325 6425
+Wire Wire Line
+	4325 6425 4875 6425
+Wire Wire Line
+	4875 6425 6425 6425
+Wire Wire Line
+	6425 6425 6525 6425
+Wire Wire Line
+	6525 6425 6625 6425
+Wire Wire Line
+	6625 6425 7225 6425
+Wire Wire Line
+	7225 6425 7500 6425
+Wire Wire Line
+	7500 6425 9250 6425
+Wire Wire Line
+	9250 6425 9350 6425
+Wire Wire Line
+	9350 6425 9900 6425
+Wire Wire Line
+	8475 2700 8475 2350
+Connection ~ 8475 2350
+Wire Wire Line
+	8475 2350 9800 2350
+Wire Wire Line
+	2050 1400 2050 1525
+Text Notes 675  800  0    50   ~ 0
+Design Note: This port is used to characterize the Tunable \nMicrowave Network when R71 is populated and R83 is DNIed.
+Wire Notes Line
+	600  575  600  2200
+Wire Notes Line
+	600  2200 3175 2200
+Wire Notes Line
+	3175 2200 3175 575 
+Wire Notes Line
+	3175 575  600  575 
+Text Notes 3650 1625 0    100  ~ 0
+Schematic Summary: ReflNW (Reflection Network)\nThis is the Tunable Microwave Network, which is covered in more detail here:\nhttps://ieeexplore.ieee.org/document/8376194.\nIt is comprised of 4 digital tunable capacitors along with inductive dividers\ndesigned such that the small DTCs subrange the large ones for enhanced\nresolution for generating a TX cancellation signal.
+Text Notes 4400 3150 0    50   ~ 0
+Design Note: 10kOhm resistors R81, R92, R89, R93 are to ensure that\nnodes between capacitors do not float and build up charge.
+Wire Notes Line
+	4325 2900 4325 3250
+Wire Notes Line
+	4325 3250 7225 3250
+Wire Notes Line
+	7225 2900 4325 2900
+Wire Notes Line
+	7225 2900 7225 3250
+Text Notes 1350 7450 0    100  ~ 0
+Small\n(Subranging)\nDigitally\nTunable\nCapacitor\n(DTC)
+Text Notes 3975 7450 0    100  ~ 0
+Large\n(Main)\nDigitally\nTunable\nCapacitor\n(DTC)
+Text Notes 5725 6650 0    100  ~ 0
+Small Subranging DTC
+Text Notes 8550 6650 0    100  ~ 0
+Large Main DTC
+Wire Notes Line
+	3525 575  3525 1800
+Wire Notes Line
+	3525 1800 9750 1800
+Wire Notes Line
+	9750 1800 9750 575 
+Wire Notes Line
+	9750 575  3525 575 
+Text Notes 2550 4100 0    50   ~ 0
+Design Note: L9 and L10\nform an inductive divider.
+Wire Notes Line
+	2500 3875 2500 4175
+Wire Notes Line
+	2500 4175 3575 4175
+Wire Notes Line
+	3575 4175 3575 3875
+Wire Notes Line
+	3575 3875 2500 3875
+Text Notes 7350 4100 0    50   ~ 0
+Design Note: L11 and L12\nform an inductive divider.
+Wire Notes Line
+	7325 3875 7325 4175
+Wire Notes Line
+	7325 4175 8400 4175
+Wire Notes Line
+	8400 4175 8400 3875
+Wire Notes Line
+	8400 3875 7325 3875
+$EndSCHEMATC

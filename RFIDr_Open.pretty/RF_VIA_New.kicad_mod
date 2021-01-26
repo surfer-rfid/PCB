@@ -1,0 +1,9 @@
+(module RF_VIA_New (layer F.Cu) (tedit 5969B552)
+  (fp_text reference REF** (at -0.025 1) (layer F.SilkS) hide
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
+  (fp_text value RF_VIA (at -0.05 -0.9) (layer F.Fab) hide
+    (effects (font (size 0.5 0.5) (thickness 0.1)))
+  )
+  (pad 1 thru_hole circle (at 0 0) (size 0.8 0.8) (drill 0.39) (layers *.Cu))
+)

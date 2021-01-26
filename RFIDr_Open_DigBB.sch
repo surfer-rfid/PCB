@@ -1,0 +1,490 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 2 17
+Title "RFIDr_Open_DigBB"
+Date "2019-12-04"
+Rev "A"
+Comp "Superlative Semiconductor LLC"
+Comment1 "Copyright 2021 Superlative Semiconductor LLC."
+Comment2 "Licensed under CERN-OHL-P v2 or later."
+Comment3 "This source provided WITHOUT ANY EXPRESS OR IMPLIED WARRANTY."
+Comment4 "Author: E. Keehr"
+$EndDescr
+$Comp
+L RFIDr_Open_Lib:SW_RESET SW1
+U 1 1 55A309E1
+P 1200 3300
+F 0 "SW1" H 1200 3375 30  0000 C CNN
+F 1 "SW_RESET" H 1200 3200 30  0000 C CNN
+F 2 "RFIDr_Open:FSMRA3JH" H 1175 3425 30  0000 C CNN
+F 3 "" H 1200 3300 60  0000 C CNN
+	1    1200 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:SW_SAMPLE SW2
+U 1 1 55A3127B
+P 1200 3950
+F 0 "SW2" H 1200 4025 30  0000 C CNN
+F 1 "SW_SAMPLE" H 1200 3850 30  0000 C CNN
+F 2 "RFIDr_Open:FSMRA3JH" H 1175 4075 30  0000 C CNN
+F 3 "" H 1200 3950 60  0000 C CNN
+	1    1200 3950
+	-1   0    0    -1  
+$EndComp
+Text Label 1775 4000 2    60   ~ 0
+SAMPLE
+Text Label 1725 4650 2    60   ~ 0
+CYCLE
+Text Label 1900 3350 2    60   ~ 0
+PWR_TOGL
+Text Label 1775 5350 2    60   ~ 0
+RESET
+$Comp
+L RFIDr_Open_Lib:SW_SAMPLE SW4
+U 1 1 55A314BD
+P 1200 4600
+F 0 "SW4" H 1200 4675 30  0000 C CNN
+F 1 "SW_SAMPLE" H 1200 4500 30  0000 C CNN
+F 2 "RFIDr_Open:FSMRA3JH" H 1200 4725 30  0000 C CNN
+F 3 "" H 1200 4600 60  0000 C CNN
+	1    1200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR051
+U 1 1 57EE29E7
+P 850 5300
+F 0 "#PWR051" H 850 5150 50  0001 C CNN
+F 1 "VDD" H 850 5450 50  0000 C CNN
+F 2 "" H 850 5300 60  0000 C CNN
+F 3 "" H 850 5300 60  0000 C CNN
+	1    850  5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR085
+U 1 1 57F9AC05
+P 1200 5600
+F 0 "#PWR085" H 1200 5350 50  0001 C CNN
+F 1 "GNDA" H 1275 5450 50  0000 R CNN
+F 2 "" H 1200 5600 50  0000 C CNN
+F 3 "" H 1200 5600 50  0000 C CNN
+	1    1200 5600
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1925 2600 2350 3350
+U 5E225E04
+F0 "RFIDr_Open_MCU" 60
+F1 "RFIDr_Open_MCU.sch" 60
+F2 "PGOODB" I L 1925 2800 60 
+F3 "CHGB" I L 1925 2900 60 
+F4 "EN_VDD_PA" O R 4275 4750 60 
+F5 "EN_VDD_1P2" O L 1925 3000 60 
+F6 "VBAT" I L 1925 2700 60 
+F7 "DIO2" I R 4275 5850 60 
+F8 "DIO3" I R 4275 5750 60 
+F9 "XO_ENABLE" O R 4275 5550 60 
+F10 "RDIO_RST_P" O R 4275 5650 60 
+F11 "ANT0" O R 4275 5200 60 
+F12 "ANT1" O R 4275 5300 60 
+F13 "RSSI_DET" I R 4275 4950 60 
+F14 "FPGA_TDO_MCU" O R 4275 2850 60 
+F15 "FPGA_TDI_MCU" O R 4275 3050 60 
+F16 "FPGA_TMS_MCU" O R 4275 2950 60 
+F17 "FPGA_TCK_MCU" O R 4275 2750 60 
+F18 "FPGA_IRQ" I R 4275 3850 60 
+F19 "FPGA_RST_N" O R 4275 3750 60 
+F20 "FPGA_PRPHL_COPI" O R 4275 3250 60 
+F21 "FPGA_PRPHL_CIPO" I R 4275 3350 60 
+F22 "FPGA_PRPHL_NPS" O R 4275 3450 60 
+F23 "FPGA_PRPHL_PCLK" O R 4275 3550 60 
+F24 "PWR_TOGL" I L 1925 3350 60 
+F25 "SAMPLE" I L 1925 4000 60 
+F26 "CYCLE" I L 1925 4650 60 
+F27 "RESET" I L 1925 5350 60 
+F28 "RFPA_VCB" O R 4275 4650 60 
+F29 "RFPA_VCA" O R 4275 4550 60 
+F30 "OPA_SPDT1_CTL" O R 4275 4850 60 
+$EndSheet
+$Sheet
+S 5450 2600 2550 1750
+U 5E27E227
+F0 "RFIDr_Open_FPGA" 60
+F1 "RFIDr_Open_FPGA.sch" 60
+F2 "CTRLR_COPI_CAP3" O R 8000 3050 60 
+F3 "CTRLR_COPI_CAP2" O R 8000 2950 60 
+F4 "CTRLR_NPS_DTC" O R 8000 3250 60 
+F5 "CTRLR_NPS_RDIO" O R 8000 3350 60 
+F6 "CTRLR_COPI_CAP0_RDIO" O R 8000 2750 60 
+F7 "CLK_36_IN" I R 8000 3850 60 
+F8 "IN_Q" I R 8000 3750 60 
+F9 "IN_I" I R 8000 3650 60 
+F10 "CTRLR_COPI_CAP1" O R 8000 2850 60 
+F11 "CTRLR_PCLK" O R 8000 3450 60 
+F12 "CTRLR_CIPO" I R 8000 3150 60 
+F13 "OUT_Q" O R 8000 4050 60 
+F14 "OUT_I" O R 8000 3950 60 
+F15 "FPGA_PRPHL_PCLK" I L 5450 3550 60 
+F16 "FPGA_PRPHL_CIPO" O L 5450 3350 60 
+F17 "FPGA_IRQ" O L 5450 3850 60 
+F18 "FPGA_TCK_MCU" I L 5450 2750 60 
+F19 "FPGA_TMS_MCU" I L 5450 2950 60 
+F20 "FPGA_TDI_MCU" I L 5450 3050 60 
+F21 "FPGA_TDO_MCU" O L 5450 2850 60 
+F22 "FPGA_PRPHL_COPI" I L 5450 3250 60 
+F23 "FPGA_PRPHL_NPS" I L 5450 3450 60 
+F24 "FPGA_RST_N" I L 5450 3750 60 
+F25 "RSSI_DET" I R 8000 4250 60 
+$EndSheet
+Text HLabel 9325 2750 2    60   Output ~ 0
+CTRLR_COPI_CAP0_RDIO
+Text HLabel 9325 2850 2    60   Output ~ 0
+CTRLR_COPI_CAP1
+Text HLabel 9325 2950 2    60   Output ~ 0
+CTRLR_COPI_CAP2
+Text HLabel 9325 3050 2    60   Output ~ 0
+CTRLR_COPI_CAP3
+Text HLabel 9325 3250 2    60   Output ~ 0
+CTRLR_NPS_DTC
+Text HLabel 9325 3350 2    60   Output ~ 0
+CTRLR_NPS_RDIO
+Text HLabel 9325 3450 2    60   Output ~ 0
+CTRLR_PCLK
+Text HLabel 9325 3150 2    60   Input ~ 0
+CTRLR_CIPO
+Text HLabel 9325 3650 2    60   Input ~ 0
+IN_I
+Text HLabel 9325 3750 2    60   Input ~ 0
+IN_Q
+Text HLabel 9325 3850 2    60   Input ~ 0
+CLK_36_IN
+Text HLabel 9325 3950 2    60   Output ~ 0
+OUT_I
+Text HLabel 9325 4050 2    60   Output ~ 0
+OUT_Q
+Wire Wire Line
+	1200 3525 1200 3600
+Wire Wire Line
+	1450 4000 1925 4000
+Wire Wire Line
+	1450 4650 1925 4650
+Wire Wire Line
+	1450 3350 1925 3350
+Wire Wire Line
+	4275 2750 5450 2750
+Wire Wire Line
+	4275 2850 5450 2850
+Wire Wire Line
+	5450 2950 4275 2950
+Wire Wire Line
+	4275 3050 5450 3050
+Wire Wire Line
+	5450 3250 4275 3250
+Wire Wire Line
+	4275 3350 5450 3350
+Wire Wire Line
+	5450 3450 4275 3450
+Wire Wire Line
+	4275 3550 5450 3550
+Wire Wire Line
+	4275 3750 5450 3750
+Wire Wire Line
+	5450 3850 4275 3850
+Wire Wire Line
+	8000 2750 9325 2750
+Wire Wire Line
+	9325 2850 8000 2850
+Wire Wire Line
+	9325 2950 8000 2950
+Wire Wire Line
+	9325 3050 8000 3050
+Wire Wire Line
+	9325 3150 8000 3150
+Wire Wire Line
+	9325 3250 8000 3250
+Wire Wire Line
+	9325 3350 8000 3350
+Wire Wire Line
+	9325 3450 8000 3450
+Wire Wire Line
+	9325 3650 8000 3650
+Wire Wire Line
+	8000 3750 9325 3750
+Wire Wire Line
+	9325 3850 8000 3850
+Wire Wire Line
+	8000 3950 9325 3950
+Wire Wire Line
+	9325 4050 8000 4050
+Text Label 4475 2750 0    60   ~ 0
+FPGA_TCK_MCU
+Text Label 4475 2850 0    60   ~ 0
+FPGA_TDO_MCU
+Text Label 4475 2950 0    60   ~ 0
+FPGA_TMS_MCU
+Text Label 4475 3050 0    60   ~ 0
+FPGA_TDI_MCU
+Text Label 4475 3250 0    60   ~ 0
+FPGA_PRPHL_COPI
+Text Label 4475 3350 0    60   ~ 0
+FPGA_PRPHL_CIPO
+Text Label 4475 3450 0    60   ~ 0
+FPGA_PRPHL_NPS
+Text Label 4475 3550 0    60   ~ 0
+FPGA_PRPHL_PCLK
+Text Label 4475 3750 0    60   ~ 0
+FPGA_RST_N
+Text Label 4475 3850 0    60   ~ 0
+FPGA_IRQ
+$Comp
+L RFIDr_Open_Lib:SW_RESET SW3
+U 1 1 55A30BDF
+P 1200 5300
+F 0 "SW3" H 1200 5375 30  0000 C CNN
+F 1 "SW_RESET" H 1200 5200 30  0000 C CNN
+F 2 "RFIDr_Open:FSMRA3JH" H 1225 5425 30  0000 C CNN
+F 3 "" H 1200 5300 60  0000 C CNN
+	1    1200 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 5525 1200 5600
+Wire Wire Line
+	850  5300 850  5350
+Wire Wire Line
+	850  5350 950  5350
+$Comp
+L power:GNDA #PWR0105
+U 1 1 5E2E7F0D
+P 1200 3600
+F 0 "#PWR0105" H 1200 3350 50  0001 C CNN
+F 1 "GNDA" H 1275 3450 50  0000 R CNN
+F 2 "" H 1200 3600 50  0000 C CNN
+F 3 "" H 1200 3600 50  0000 C CNN
+	1    1200 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0106
+U 1 1 5E2E93C5
+P 850 3600
+F 0 "#PWR0106" H 850 3350 50  0001 C CNN
+F 1 "GNDA" H 925 3450 50  0000 R CNN
+F 2 "" H 850 3600 50  0000 C CNN
+F 3 "" H 850 3600 50  0000 C CNN
+	1    850  3600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	850  3600 850  3350
+Wire Wire Line
+	850  3350 950  3350
+$Comp
+L power:GNDA #PWR0107
+U 1 1 5E2EB9F5
+P 1200 4250
+F 0 "#PWR0107" H 1200 4000 50  0001 C CNN
+F 1 "GNDA" H 1275 4100 50  0000 R CNN
+F 2 "" H 1200 4250 50  0000 C CNN
+F 3 "" H 1200 4250 50  0000 C CNN
+	1    1200 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0108
+U 1 1 5E2EBB40
+P 850 4250
+F 0 "#PWR0108" H 850 4000 50  0001 C CNN
+F 1 "GNDA" H 925 4100 50  0000 R CNN
+F 2 "" H 850 4250 50  0000 C CNN
+F 3 "" H 850 4250 50  0000 C CNN
+	1    850  4250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4175 1200 4250
+Wire Wire Line
+	850  4000 850  4250
+Wire Wire Line
+	850  4000 950  4000
+$Comp
+L power:GNDA #PWR0109
+U 1 1 5E2ED55C
+P 1200 4900
+F 0 "#PWR0109" H 1200 4650 50  0001 C CNN
+F 1 "GNDA" H 1275 4750 50  0000 R CNN
+F 2 "" H 1200 4900 50  0000 C CNN
+F 3 "" H 1200 4900 50  0000 C CNN
+	1    1200 4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 5350 1925 5350
+$Comp
+L power:GNDA #PWR0110
+U 1 1 5E2EEBA4
+P 850 4900
+F 0 "#PWR0110" H 850 4650 50  0001 C CNN
+F 1 "GNDA" H 925 4750 50  0000 R CNN
+F 2 "" H 850 4900 50  0000 C CNN
+F 3 "" H 850 4900 50  0000 C CNN
+	1    850  4900
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	850  4900 850  4650
+Wire Wire Line
+	850  4650 950  4650
+Wire Wire Line
+	1200 4825 1200 4900
+Text HLabel 1250 2700 0    60   Input ~ 0
+VBAT
+Text HLabel 1250 2800 0    60   Input ~ 0
+PGOODB
+Text HLabel 1250 2900 0    60   Input ~ 0
+CHGB
+Text HLabel 1250 3000 0    60   Output ~ 0
+EN_VDD_1P2
+Wire Wire Line
+	1250 2700 1925 2700
+Wire Wire Line
+	1250 2800 1925 2800
+Wire Wire Line
+	1250 2900 1925 2900
+Wire Wire Line
+	1250 3000 1925 3000
+Text Label 1525 2700 0    60   ~ 0
+VBAT
+Text Label 1475 2800 0    60   ~ 0
+PGOODB
+Text Label 1525 2900 0    60   ~ 0
+CHGB
+Text Label 1325 3000 0    60   ~ 0
+EN_VDD_1P2
+Text Label 8125 2750 0    60   ~ 0
+CTRLR_COPI_CAP0_RDIO
+Text Label 8125 2850 0    60   ~ 0
+CTRLR_COPI_CAP1
+Text Label 8125 2950 0    60   ~ 0
+CTRLR_COPI_CAP2
+Text Label 8125 3050 0    60   ~ 0
+CTRLR_COPI_CAP3
+Text Label 8125 3150 0    60   ~ 0
+CTRLR_CIPO
+Text Label 8125 3250 0    60   ~ 0
+CTRLR_NPS_DTC
+Text Label 8125 3350 0    60   ~ 0
+CTRLR_NPS_RDIO
+Text Label 8125 3450 0    60   ~ 0
+CTRLR_PCLK
+Text Label 8125 3650 0    60   ~ 0
+IN_I
+Text Label 8125 3750 0    60   ~ 0
+IN_Q
+Text Label 8125 3850 0    60   ~ 0
+CLK_36_IN
+Text Label 8125 3950 0    60   ~ 0
+OUT_I
+Text Label 8125 4050 0    60   ~ 0
+OUT_Q
+Text HLabel 5450 4550 2    60   Output ~ 0
+RFPA_VCA
+Text HLabel 5450 4650 2    60   Output ~ 0
+RFPA_VCB
+Text HLabel 5450 5550 2    60   Output ~ 0
+XO_ENABLE
+Text HLabel 5450 5650 2    60   Output ~ 0
+RDIO_RST_P
+Text HLabel 5450 5200 2    60   Output ~ 0
+ANT0
+Text HLabel 5450 5300 2    60   Output ~ 0
+ANT1
+Text HLabel 5450 4850 2    60   Output ~ 0
+OPA_SPDT1_CTL
+Text HLabel 5450 4750 2    60   Output ~ 0
+EN_VDD_PA
+Text HLabel 8850 4950 2    60   Input ~ 0
+RSSI_DET
+Text HLabel 5450 5750 2    60   Input ~ 0
+DIO3
+Text HLabel 5450 5850 2    60   Input ~ 0
+DIO2
+Wire Wire Line
+	5450 4550 4275 4550
+Wire Wire Line
+	5450 4650 4275 4650
+Wire Wire Line
+	5450 5550 4275 5550
+Wire Wire Line
+	4275 5650 5450 5650
+Wire Wire Line
+	5450 5200 4275 5200
+Wire Wire Line
+	5450 5300 4275 5300
+Wire Wire Line
+	5450 4850 4275 4850
+Wire Wire Line
+	5450 4750 4275 4750
+Wire Wire Line
+	8850 4950 8200 4950
+Wire Wire Line
+	5450 5750 4275 5750
+Wire Wire Line
+	5450 5850 4275 5850
+Text Label 4500 4550 0    60   ~ 0
+RFPA_VCA
+Text Label 4500 4650 0    60   ~ 0
+RFPA_VCB
+Text Label 4500 5550 0    60   ~ 0
+XO_ENABLE
+Text Label 4500 5650 0    60   ~ 0
+RDIO_RST_P
+Text Label 4500 5200 0    60   ~ 0
+ANT0
+Text Label 4500 5300 0    60   ~ 0
+ANT1
+Text Label 4500 4850 0    60   ~ 0
+OPA_SPDT1_CTL
+Text Label 4500 4750 0    60   ~ 0
+EN_VDD_PA
+Text Label 4500 4950 0    60   ~ 0
+RSSI_DET
+Text Label 4500 5750 0    60   ~ 0
+DIO3
+Text Label 4500 5850 0    60   ~ 0
+DIO2
+Wire Wire Line
+	8000 4250 8200 4250
+Wire Wire Line
+	8200 4250 8200 4950
+Connection ~ 8200 4950
+Wire Wire Line
+	8200 4950 4275 4950
+Text Notes 2025 1700 0    100  ~ 0
+Schematic Summary: DigBB\nThis schematic is another high-level schematic which separates the MCU and the FPGA.\nThe FPGA performs all of the real-time digital baseband operations of the RFIDr reader,\nwhile the MCU performs less time-critical, but more behaviorally complex operations.
+Wire Notes Line
+	1925 1000 1925 1825
+Wire Notes Line
+	1925 1825 9000 1825
+Wire Notes Line
+	9000 1825 9000 975 
+Wire Notes Line
+	9000 975  1925 975 
+Text Notes 700  6025 0    100  ~ 0
+User Buttons
+Text Notes 725  6850 0    50   ~ 0
+Design Note:\nThe user buttons were added in when it was thought\nthat the RFIDr reader may become a consumer product.\nPower toggle was to turn the reader on/off.\nSample was to search for a particular tag.\nCycle was to cycle through a list of items in a smartphone app.\nReset was to reset, of course.
+Wire Notes Line
+	675  6225 675  6900
+Wire Notes Line
+	675  6900 3350 6900
+Wire Notes Line
+	3350 6900 3350 6225
+Wire Notes Line
+	3350 6225 675  6225
+$EndSCHEMATC

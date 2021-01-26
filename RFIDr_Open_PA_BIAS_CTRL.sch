@@ -1,0 +1,443 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 5 17
+Title "RFIDr_Open_PA_BIAS_CTRL"
+Date "2020-05-21"
+Rev "A"
+Comp "Superlative Semiconductor LLC"
+Comment1 "Copyright 2021 Superlative Semiconductor LLC."
+Comment2 "Licensed under CERN-OHL-P v2 or later."
+Comment3 "This source provided WITHOUT ANY EXPRESS OR IMPLIED WARRANTY."
+Comment4 "Author: E. Keehr"
+$EndDescr
+Text Label 8800 2650 2    60   ~ 0
+VDD_OPA_PA
+$Comp
+L power:GND #PWR0129
+U 1 1 5E2C3591
+P 9425 3725
+F 0 "#PWR0129" H 9425 3475 50  0001 C CNN
+F 1 "GND" V 9425 3525 50  0000 C CNN
+F 2 "" H 9425 3725 60  0000 C CNN
+F 3 "" H 9425 3725 60  0000 C CNN
+	1    9425 3725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 5E2C3597
+P 9425 3600
+F 0 "#PWR0130" H 9425 3350 50  0001 C CNN
+F 1 "GND" V 9425 3400 50  0000 C CNN
+F 2 "" H 9425 3600 60  0000 C CNN
+F 3 "" H 9425 3600 60  0000 C CNN
+	1    9425 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0131
+U 1 1 5E2C359D
+P 9025 4375
+F 0 "#PWR0131" H 9025 4125 50  0001 C CNN
+F 1 "GND" V 9025 4175 50  0000 C CNN
+F 2 "" H 9025 4375 60  0000 C CNN
+F 3 "" H 9025 4375 60  0000 C CNN
+	1    9025 4375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5E2C35A3
+P 8000 3600
+F 0 "C1" V 7950 3675 50  0000 L CNN
+F 1 "100n" V 8050 3375 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 8125 3550 30  0000 C CNN
+F 3 "" H 8000 3600 60  0000 C CNN
+	1    8000 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 5E2C35AA
+P 8000 3775
+F 0 "#PWR0133" H 8000 3525 50  0001 C CNN
+F 1 "GND" V 8000 3575 50  0000 C CNN
+F 2 "" H 8000 3775 60  0000 C CNN
+F 3 "" H 8000 3775 60  0000 C CNN
+	1    8000 3775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0135
+U 1 1 5E2C35B7
+P 8000 3025
+F 0 "#PWR0135" H 8000 2875 50  0001 C CNN
+F 1 "VDD" H 8025 3175 50  0000 C CNN
+F 2 "" H 8000 3025 60  0000 C CNN
+F 3 "" H 8000 3025 60  0000 C CNN
+	1    8000 3025
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 4150
+Wire Wire Line
+	8800 4375 8900 4375
+Connection ~ 8900 4375
+Wire Wire Line
+	8800 2650 8800 3150
+Wire Wire Line
+	8900 4150 8900 4375
+Wire Wire Line
+	8800 4375 8800 4150
+Wire Wire Line
+	9350 3600 9425 3600
+Wire Wire Line
+	8000 3125 8250 3125
+Wire Wire Line
+	8700 3125 8700 3150
+Wire Wire Line
+	8250 3125 8250 3600
+Connection ~ 8250 3600
+Wire Wire Line
+	8000 3700 8000 3775
+Wire Wire Line
+	8000 3025 8000 3125
+Wire Wire Line
+	9425 3725 9375 3725
+Wire Wire Line
+	9375 3725 9375 3700
+Wire Wire Line
+	9375 3700 9350 3700
+Text Label 8950 2650 0    60   ~ 0
+OPA_SPDT1_CTL
+Wire Wire Line
+	8900 3150 8900 2650
+Wire Wire Line
+	8900 2650 9650 2650
+Wire Wire Line
+	5350 2650 5350 3475
+Wire Wire Line
+	5600 3300 5600 3075
+Wire Wire Line
+	4725 3775 5475 3775
+Wire Wire Line
+	2175 3675 3725 3675
+Connection ~ 3475 3475
+Wire Wire Line
+	3475 3350 3475 3475
+Connection ~ 6825 3575
+Wire Wire Line
+	6825 3425 6825 3575
+Wire Wire Line
+	3625 3775 3625 4000
+Wire Wire Line
+	2750 3575 3725 3575
+Wire Wire Line
+	3100 3475 3475 3475
+Wire Wire Line
+	4725 3575 6825 3575
+Wire Wire Line
+	7400 3675 4725 3675
+Wire Wire Line
+	5350 3475 4725 3475
+Wire Wire Line
+	2175 4025 2175 4125
+Wire Wire Line
+	2175 3625 2175 3675
+Wire Wire Line
+	6075 5450 6075 5550
+Wire Wire Line
+	6075 5050 6075 5100
+Connection ~ 6075 5100
+Connection ~ 2175 3675
+Text Label 6075 4100 3    60   ~ 0
+VDD_OPA_PA
+$Comp
+L power:GND #PWR0136
+U 1 1 5E2C3D0E
+P 6075 5550
+F 0 "#PWR0136" H 6075 5300 50  0001 C CNN
+F 1 "GND" H 6075 5400 50  0000 C CNN
+F 2 "" H 6075 5550 60  0000 C CNN
+F 3 "" H 6075 5550 60  0000 C CNN
+	1    6075 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R26
+U 1 1 5E2C3D14
+P 6075 5300
+F 0 "R26" V 6125 5100 50  0000 C CNN
+F 1 "100k" V 6075 5300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 6200 5225 30  0000 C CNN
+F 3 "" H 6075 5300 30  0000 C CNN
+	1    6075 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R25
+U 1 1 5E2C3D1B
+P 6075 4900
+F 0 "R25" V 6025 4700 50  0000 C CNN
+F 1 "12k" V 6075 4900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 5950 4825 30  0000 C CNN
+F 3 "" H 6075 4900 30  0000 C CNN
+	1    6075 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 5E2C3D22
+P 2175 4125
+F 0 "#PWR0137" H 2175 3875 50  0001 C CNN
+F 1 "GND" H 2175 3975 50  0000 C CNN
+F 2 "" H 2175 4125 60  0000 C CNN
+F 3 "" H 2175 4125 60  0000 C CNN
+	1    2175 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R24
+U 1 1 5E2C3D28
+P 2175 3875
+F 0 "R24" V 2275 3875 50  0000 C CNN
+F 1 "100k" V 2175 3875 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2050 3800 30  0000 C CNN
+F 3 "" H 2175 3875 30  0000 C CNN
+	1    2175 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5E2C3D2F
+P 2175 3475
+F 0 "R23" V 2075 3475 50  0000 C CNN
+F 1 "12k" V 2175 3475 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2300 3350 30  0000 C CNN
+F 3 "" H 2175 3475 30  0000 C CNN
+	1    2175 3475
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5E2C3D36
+P 5600 3300
+F 0 "#PWR0138" H 5600 3050 50  0001 C CNN
+F 1 "GND" H 5600 3150 50  0000 C CNN
+F 2 "" H 5600 3300 60  0000 C CNN
+F 3 "" H 5600 3300 60  0000 C CNN
+	1    5600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C41
+U 1 1 5E2C3D3C
+P 5600 2975
+F 0 "C41" V 5650 3050 50  0000 L CNN
+F 1 "100n" V 5650 2750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" V 5725 2875 30  0000 C CNN
+F 3 "" H 5600 2975 60  0000 C CNN
+	1    5600 2975
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0139
+U 1 1 5E2C3D43
+P 3625 4000
+F 0 "#PWR0139" H 3625 3750 50  0001 C CNN
+F 1 "GND" H 3625 3850 50  0000 C CNN
+F 2 "" H 3625 4000 60  0000 C CNN
+F 3 "" H 3625 4000 60  0000 C CNN
+	1    3625 4000
+	1    0    0    -1  
+$EndComp
+Text Label 5325 3675 2    60   ~ 0
+DAC_OA1_FB
+Text Label 3675 3575 2    60   ~ 0
+DAC_OA0_FB
+Text Label 5350 3775 2    60   ~ 0
+DAC_OA1
+Text Label 3325 3675 0    60   ~ 0
+DAC_OA0
+Text HLabel 3475 3350 1    60   Output ~ 0
+RFPA_VCA
+Text HLabel 6825 3425 1    60   Output ~ 0
+RFPA_VCB
+$Comp
+L Device:R R22
+U 1 1 5E2C3D4F
+P 2750 3100
+F 0 "R22" V 2800 2900 50  0000 C CNN
+F 1 "DNP" V 2750 3100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 2675 3075 30  0000 C CNN
+F 3 "" H 2750 3100 30  0000 C CNN
+	1    2750 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5E2C3D56
+P 2950 3475
+F 0 "R21" V 3100 3450 50  0000 C CNN
+F 1 "0" V 2950 3475 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 3025 3300 30  0000 C CNN
+F 3 "" H 2950 3475 30  0000 C CNN
+	1    2950 3475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R36
+U 1 1 5E2C3D5D
+P 7125 3575
+F 0 "R36" V 7050 3550 50  0000 C CNN
+F 1 "0" V 7125 3575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7200 3450 30  0000 C CNN
+F 3 "" H 7125 3575 30  0000 C CNN
+	1    7125 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R37
+U 1 1 5E2C3D64
+P 7400 3300
+F 0 "R37" V 7325 3300 50  0000 C CNN
+F 1 "DNP" V 7400 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 7500 3175 30  0000 C CNN
+F 3 "" H 7400 3300 30  0000 C CNN
+	1    7400 3300
+	-1   0    0    1   
+$EndComp
+Text Label 5275 3475 2    60   ~ 0
+VDD_OPA_PA
+$Comp
+L RFIDr_Open_Lib:TSV358 U11
+U 1 1 5E2C3D6C
+P 3925 3275
+F 0 "U11" H 4025 3225 60  0000 C CNN
+F 1 "TSV358" H 4125 3325 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 4200 2625 30  0000 C CNN
+F 3 "" H 3925 3275 60  0000 C CNN
+	1    3925 3275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3475 2800 3475
+Text HLabel 9650 2650 2    60   Input ~ 0
+OPA_SPDT1_CTL
+$Comp
+L power:GND #PWR0142
+U 1 1 5E281D7E
+P 7400 3000
+F 0 "#PWR0142" H 7400 2750 50  0001 C CNN
+F 1 "GND" H 7400 2850 50  0000 C CNN
+F 2 "" H 7400 3000 60  0000 C CNN
+F 3 "" H 7400 3000 60  0000 C CNN
+	1    7400 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 3150 7400 3000
+Wire Wire Line
+	2750 3250 2750 3475
+Connection ~ 2750 3475
+Wire Wire Line
+	3725 3775 3625 3775
+Wire Wire Line
+	2175 2650 2175 3325
+Text Label 2175 2750 3    60   ~ 0
+VDD_OPA_PA
+Wire Wire Line
+	7400 3450 7400 3575
+Connection ~ 7400 3575
+Wire Wire Line
+	7275 3575 7400 3575
+Wire Wire Line
+	5600 2650 5600 2875
+Wire Wire Line
+	5475 5100 6075 5100
+Wire Wire Line
+	5475 3775 5475 5100
+Wire Wire Line
+	6075 4000 6075 4750
+Connection ~ 5350 2650
+Wire Wire Line
+	7700 4000 6075 4000
+Wire Wire Line
+	7700 2650 7700 4000
+$Comp
+L power:GND #PWR0143
+U 1 1 5E283E42
+P 2750 2875
+F 0 "#PWR0143" H 2750 2625 50  0001 C CNN
+F 1 "GND" H 2750 2725 50  0000 C CNN
+F 2 "" H 2750 2875 60  0000 C CNN
+F 3 "" H 2750 2875 60  0000 C CNN
+	1    2750 2875
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2750 2875 2750 2950
+Connection ~ 7700 2650
+Wire Wire Line
+	2175 2650 5350 2650
+$Comp
+L RFIDr_Open_Lib:NLAS5223B U3
+U 1 1 5E2C35B0
+P 8450 2950
+F 0 "U3" H 9050 2600 60  0000 C CNN
+F 1 "NLAS5223B" H 9250 2700 60  0000 C CNN
+F 2 "RFIDr_Open:WQFN-10" H 9375 2575 30  0000 C CNN
+F 3 "" H 8450 2950 60  0000 C CNN
+	1    8450 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 3125
+Connection ~ 8250 3125
+Connection ~ 5600 2650
+Wire Wire Line
+	8900 4375 9025 4375
+Wire Wire Line
+	8250 3600 8250 3700
+Wire Wire Line
+	3475 3475 3725 3475
+Wire Wire Line
+	6825 3575 6975 3575
+Wire Wire Line
+	6075 5100 6075 5150
+Wire Wire Line
+	2175 3675 2175 3725
+Wire Wire Line
+	2750 3475 2750 3575
+Wire Wire Line
+	7400 3575 7400 3675
+Wire Wire Line
+	5350 2650 5600 2650
+Wire Wire Line
+	7700 2650 8800 2650
+Wire Wire Line
+	8000 3125 8000 3500
+Wire Wire Line
+	8250 3125 8700 3125
+Wire Wire Line
+	5600 2650 7700 2650
+Text Notes 1850 1850 0    100  ~ 0
+Schematic Summary: PA BIAS Control\nIn this schematic, bias voltages for the PA are generated via resistor strings and unity-gain biased opamps. \nIt was intended in the future that the PA bias be made adjustable on-the-fly, but \nthis was a way it could be made easily adjustable  by changing a resistor divider.\nThe resistive dividers could use capacitive decouping to ground at the output\nvoltage node, but tests have shown this makes no difference to reader performance.
+Text Notes 8400 4825 0    100  ~ 0
+Dual Solid-State\nSPDT Switches
+Text Notes 3750 4150 0    100  ~ 0
+Dual Opamps
+Text Notes 6400 5250 0    100  ~ 0
+Resistive Divider sets\nPA bias at about 2.7V.
+Text Notes 1325 4750 0    100  ~ 0
+Resistive Divider sets\nPA bias at about 2.7V.
+Wire Notes Line
+	1775 850  1775 1925
+Wire Notes Line
+	1775 1925 10425 1925
+Wire Notes Line
+	10425 1925 10425 850 
+Wire Notes Line
+	10425 850  1775 850 
+$EndSCHEMATC

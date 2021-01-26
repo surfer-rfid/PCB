@@ -1,0 +1,568 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 7 17
+Title "RFIDr_Open_FPGA_CORE"
+Date "2020-01-16"
+Rev "A"
+Comp "Superlative Semiconductor LLC"
+Comment1 "Copyright 2021 Superlative Semiconductor LLC."
+Comment2 "Licensed under CERN-OHL-P v2 or later."
+Comment3 "This source provided WITHOUT ANY EXPRESS OR IMPLIED WARRANTY."
+Comment4 "Author: E. Keehr"
+$EndDescr
+$Comp
+L RFIDr_Open_Lib:10M02E144 U10
+U 1 1 57F8A89A
+P 3250 1175
+AR Path="/5581205B/57F76589/57F8A89A" Ref="U10"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8A89A" Ref="U10"  Part="1" 
+F 0 "U10" H 5300 -975 60  0000 L CNN
+F 1 "10M02E144" H 5150 -1075 60  0000 L CNN
+F 2 "RFIDr_Open:EQFP-144_20x20mm_Pitch0.5mm" H 3250 700 60  0001 C CNN
+F 3 "" H 3250 700 60  0001 C CNN
+	1    3250 1175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR090
+U 1 1 57F8B66D
+P 2475 2850
+AR Path="/5581205B/57F76589/57F8B66D" Ref="#PWR090"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B66D" Ref="#PWR090"  Part="1" 
+F 0 "#PWR090" H 2475 2600 50  0001 C CNN
+F 1 "GND" V 2480 2722 50  0000 R CNN
+F 2 "" H 2475 2850 50  0000 C CNN
+F 3 "" H 2475 2850 50  0000 C CNN
+	1    2475 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR091
+U 1 1 57F8B689
+P 2900 3750
+AR Path="/5581205B/57F76589/57F8B689" Ref="#PWR091"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B689" Ref="#PWR091"  Part="1" 
+F 0 "#PWR091" H 2900 3500 50  0001 C CNN
+F 1 "GND" V 2905 3622 50  0000 R CNN
+F 2 "" H 2900 3750 50  0000 C CNN
+F 3 "" H 2900 3750 50  0000 C CNN
+	1    2900 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR092
+U 1 1 57F8B6D2
+P 2900 4750
+AR Path="/5581205B/57F76589/57F8B6D2" Ref="#PWR092"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B6D2" Ref="#PWR092"  Part="1" 
+F 0 "#PWR092" H 2900 4500 50  0001 C CNN
+F 1 "GND" V 2905 4622 50  0000 R CNN
+F 2 "" H 2900 4750 50  0000 C CNN
+F 3 "" H 2900 4750 50  0000 C CNN
+	1    2900 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR093
+U 1 1 57F8B6E6
+P 3850 6050
+AR Path="/5581205B/57F76589/57F8B6E6" Ref="#PWR093"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B6E6" Ref="#PWR093"  Part="1" 
+F 0 "#PWR093" H 3850 5800 50  0001 C CNN
+F 1 "GND" H 3855 5877 50  0000 C CNN
+F 2 "" H 3850 6050 50  0000 C CNN
+F 3 "" H 3850 6050 50  0000 C CNN
+	1    3850 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR094
+U 1 1 57F8B6FB
+P 4550 6050
+AR Path="/5581205B/57F76589/57F8B6FB" Ref="#PWR094"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B6FB" Ref="#PWR094"  Part="1" 
+F 0 "#PWR094" H 4550 5800 50  0001 C CNN
+F 1 "GND" H 4555 5877 50  0000 C CNN
+F 2 "" H 4550 6050 50  0000 C CNN
+F 3 "" H 4550 6050 50  0000 C CNN
+	1    4550 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR095
+U 1 1 57F8B709
+P 5750 6050
+AR Path="/5581205B/57F76589/57F8B709" Ref="#PWR095"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B709" Ref="#PWR095"  Part="1" 
+F 0 "#PWR095" H 5750 5800 50  0001 C CNN
+F 1 "GND" H 5755 5877 50  0000 C CNN
+F 2 "" H 5750 6050 50  0000 C CNN
+F 3 "" H 5750 6050 50  0000 C CNN
+	1    5750 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR096
+U 1 1 57F8B71B
+P 6650 6050
+AR Path="/5581205B/57F76589/57F8B71B" Ref="#PWR096"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B71B" Ref="#PWR096"  Part="1" 
+F 0 "#PWR096" H 6650 5800 50  0001 C CNN
+F 1 "GND" H 6655 5877 50  0000 C CNN
+F 2 "" H 6650 6050 50  0000 C CNN
+F 3 "" H 6650 6050 50  0000 C CNN
+	1    6650 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR097
+U 1 1 57F8B729
+P 8400 4375
+AR Path="/5581205B/57F76589/57F8B729" Ref="#PWR097"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B729" Ref="#PWR097"  Part="1" 
+F 0 "#PWR097" H 8400 4125 50  0001 C CNN
+F 1 "GND" V 8405 4247 50  0000 R CNN
+F 2 "" H 8400 4375 50  0000 C CNN
+F 3 "" H 8400 4375 50  0000 C CNN
+	1    8400 4375
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR098
+U 1 1 57F8B742
+P 8400 2275
+AR Path="/5581205B/57F76589/57F8B742" Ref="#PWR098"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B742" Ref="#PWR098"  Part="1" 
+F 0 "#PWR098" H 8400 2025 50  0001 C CNN
+F 1 "GND" V 8405 2147 50  0000 R CNN
+F 2 "" H 8400 2275 50  0000 C CNN
+F 3 "" H 8400 2275 50  0000 C CNN
+	1    8400 2275
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR099
+U 1 1 57F8B757
+P 7150 850
+AR Path="/5581205B/57F76589/57F8B757" Ref="#PWR099"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B757" Ref="#PWR099"  Part="1" 
+F 0 "#PWR099" H 7150 600 50  0001 C CNN
+F 1 "GND" H 7155 677 50  0000 C CNN
+F 2 "" H 7150 850 50  0000 C CNN
+F 3 "" H 7150 850 50  0000 C CNN
+	1    7150 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0100
+U 1 1 57F8B76D
+P 6250 850
+AR Path="/5581205B/57F76589/57F8B76D" Ref="#PWR0100"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B76D" Ref="#PWR0100"  Part="1" 
+F 0 "#PWR0100" H 6250 600 50  0001 C CNN
+F 1 "GND" H 6255 677 50  0000 C CNN
+F 2 "" H 6250 850 50  0000 C CNN
+F 3 "" H 6250 850 50  0000 C CNN
+	1    6250 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 57F8B78F
+P 4850 850
+AR Path="/5581205B/57F76589/57F8B78F" Ref="#PWR0101"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B78F" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 4850 600 50  0001 C CNN
+F 1 "GND" H 4855 677 50  0000 C CNN
+F 2 "" H 4850 850 50  0000 C CNN
+F 3 "" H 4850 850 50  0000 C CNN
+	1    4850 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 57F8B79D
+P 3850 850
+AR Path="/5581205B/57F76589/57F8B79D" Ref="#PWR0102"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B79D" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 3850 600 50  0001 C CNN
+F 1 "GND" H 3855 677 50  0000 C CNN
+F 2 "" H 3850 850 50  0000 C CNN
+F 3 "" H 3850 850 50  0000 C CNN
+	1    3850 850 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 57F8B7AB
+P 3550 850
+AR Path="/5581205B/57F76589/57F8B7AB" Ref="#PWR0103"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8B7AB" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 3550 600 50  0001 C CNN
+F 1 "GND" H 3555 677 50  0000 C CNN
+F 2 "" H 3550 850 50  0000 C CNN
+F 3 "" H 3550 850 50  0000 C CNN
+	1    3550 850 
+	-1   0    0    1   
+$EndComp
+Text Label 2550 1850 0    60   ~ 0
+VCC_ONE
+Text Label 2550 1950 0    60   ~ 0
+VCC_ONE
+Text Label 2550 2950 0    60   ~ 0
+VCC_ONE
+Text Label 2550 3950 0    60   ~ 0
+VCC_ONE
+Text Label 2550 5150 0    60   ~ 0
+VCC_ONE
+Text Label 2550 5250 0    60   ~ 0
+VCC_ONE
+Text Label 2550 5350 0    60   ~ 0
+VCC_ONE
+Text Label 3750 6375 1    60   ~ 0
+VCC_ONE
+Text Label 4350 6375 1    60   ~ 0
+VCC_ONE
+Text Label 5650 6375 1    60   ~ 0
+VCC_ONE
+Text Label 6450 6375 1    60   ~ 0
+VCC_ONE
+Text Label 7250 6375 1    60   ~ 0
+VCC_ONE
+Text Label 8400 5375 2    60   ~ 0
+VCC_ONE
+Text Label 8400 4475 2    60   ~ 0
+VCC_ONE
+Text Label 8400 3375 2    60   ~ 0
+VCC_ONE
+Text Label 8400 2475 2    60   ~ 0
+VCC_ONE
+Text Label 8400 1975 2    60   ~ 0
+VCC_ONE
+Text Label 8400 1875 2    60   ~ 0
+VCC_ONE
+Text Label 7250 875  3    60   ~ 0
+VCC_ONE
+Text Label 7050 875  3    60   ~ 0
+VCC_ONE
+Text Label 6350 875  3    60   ~ 0
+VCC_ONE
+Text Label 4950 875  3    60   ~ 0
+VCC_ONE
+Text Label 4550 875  3    60   ~ 0
+VCC_ONE
+Text Label 3950 875  3    60   ~ 0
+VCC_ONE
+Text Label 3750 875  3    60   ~ 0
+VCC_ONE
+Text HLabel 2550 1850 0    60   BiDi ~ 0
+VCCIO1
+Text HLabel 1075 1350 0    60   BiDi ~ 0
+VCCA1
+Text HLabel 1075 1450 0    60   BiDi ~ 0
+VCCA2
+Text HLabel 1075 1550 0    60   BiDi ~ 0
+VCCIO2
+Text HLabel 1075 1650 0    60   BiDi ~ 0
+VCCDIG1
+Text HLabel 1075 1750 0    60   BiDi ~ 0
+VCCDIG2
+Text HLabel 1075 1850 0    60   BiDi ~ 0
+GND1
+Text HLabel 1075 1950 0    60   BiDi ~ 0
+GND2
+Text HLabel 1075 2050 0    60   BiDi ~ 0
+GND3
+NoConn ~ 1425 1350
+NoConn ~ 1425 1450
+NoConn ~ 1425 1550
+NoConn ~ 1425 1650
+NoConn ~ 1425 1750
+NoConn ~ 1425 1850
+NoConn ~ 1425 1950
+NoConn ~ 1425 2050
+Text HLabel 2850 3050 0    60   Input ~ 0
+PRPHL_NPS
+Text HLabel 2850 3650 0    60   Input ~ 0
+RST_N
+Text HLabel 2850 4250 0    60   Output ~ 0
+CTRLR_COPI_CAP2
+Text HLabel 2850 4350 0    60   Output ~ 0
+CTRLR_COPI_CAP3
+Text Label 2550 4650 0    60   ~ 0
+VCC_ONE
+Text HLabel 4050 6400 3    60   Output ~ 0
+CTRLR_NPS_DTC
+Text HLabel 4250 6400 3    60   Output ~ 0
+CTRLR_NPS_RDIO
+Text HLabel 5250 6400 3    60   Output ~ 0
+CTRLR_COPI_CAP0_RDIO
+Text HLabel 5450 6400 3    60   Input ~ 0
+CTRLR_CIPO
+Text Label 7150 6375 1    60   ~ 0
+VCC_ONE
+Text HLabel 6750 6400 3    60   Output ~ 0
+OUT_I
+Text HLabel 6950 6400 3    60   Output ~ 0
+OUT_Q
+Wire Wire Line
+	3550 850  3550 1375
+Wire Wire Line
+	3850 850  3850 1375
+Wire Wire Line
+	6250 850  6250 1375
+Wire Wire Line
+	4850 850  4850 1375
+Wire Wire Line
+	7150 850  7150 1375
+Wire Wire Line
+	8400 2275 7900 2275
+Wire Wire Line
+	8400 4375 7900 4375
+Wire Wire Line
+	6650 6050 6650 5875
+Wire Wire Line
+	5750 5875 5750 6050
+Wire Wire Line
+	4550 5875 4550 6050
+Wire Wire Line
+	3850 5875 3850 6050
+Wire Wire Line
+	3050 2850 2475 2850
+Wire Wire Line
+	3050 3750 2900 3750
+Wire Wire Line
+	3050 4750 2900 4750
+Wire Wire Line
+	3050 1850 2550 1850
+Wire Wire Line
+	3050 1950 2550 1950
+Wire Wire Line
+	3050 2950 2550 2950
+Wire Wire Line
+	3050 3950 2550 3950
+Wire Wire Line
+	3050 5150 2550 5150
+Wire Wire Line
+	3050 5250 2550 5250
+Wire Wire Line
+	3050 5350 2550 5350
+Wire Wire Line
+	3750 5875 3750 6375
+Wire Wire Line
+	4350 5875 4350 6375
+Wire Wire Line
+	5650 5875 5650 6375
+Wire Wire Line
+	5850 5875 5850 6450
+Wire Wire Line
+	6450 5875 6450 6450
+Wire Wire Line
+	7250 5875 7250 6375
+Wire Wire Line
+	7900 5375 8400 5375
+Wire Wire Line
+	7900 4475 8400 4475
+Wire Wire Line
+	7900 3375 8400 3375
+Wire Wire Line
+	7900 2475 8400 2475
+Wire Wire Line
+	7900 1975 8400 1975
+Wire Wire Line
+	7900 1875 8400 1875
+Wire Wire Line
+	7250 1375 7250 875 
+Wire Wire Line
+	7050 1375 7050 875 
+Wire Wire Line
+	6350 1375 6350 875 
+Wire Wire Line
+	6050 550  6050 1375
+Wire Wire Line
+	4950 550  4950 1375
+Wire Wire Line
+	4550 1375 4550 875 
+Wire Wire Line
+	3950 1375 3950 875 
+Wire Wire Line
+	3750 1375 3750 875 
+Wire Wire Line
+	1075 1350 1425 1350
+Wire Wire Line
+	1075 1450 1425 1450
+Wire Wire Line
+	1075 1550 1425 1550
+Wire Wire Line
+	1075 1650 1425 1650
+Wire Wire Line
+	1075 1750 1425 1750
+Wire Wire Line
+	1075 1850 1425 1850
+Wire Wire Line
+	1075 1950 1425 1950
+Wire Wire Line
+	1075 2050 1425 2050
+Wire Wire Line
+	3050 4650 2550 4650
+Wire Wire Line
+	2850 4250 3050 4250
+Wire Wire Line
+	3050 4350 2850 4350
+Wire Wire Line
+	2850 3050 3050 3050
+Wire Wire Line
+	2850 3650 3050 3650
+Wire Wire Line
+	7150 5875 7150 6375
+Wire Wire Line
+	6950 6400 6950 5875
+Wire Wire Line
+	6750 5875 6750 6400
+Wire Wire Line
+	5450 5875 5450 6400
+Wire Wire Line
+	5250 5875 5250 6400
+Wire Wire Line
+	4250 5875 4250 6400
+Wire Wire Line
+	4050 5875 4050 6400
+Text HLabel 8450 3775 2    60   Input ~ 0
+IN_I
+Text HLabel 8450 3875 2    60   Input ~ 0
+IN_Q
+Text HLabel 8450 3575 2    60   Input ~ 0
+CLK_36_IN
+Text HLabel 8450 3675 2    60   Output ~ 0
+CTRLR_PCLK
+$Comp
+L power:GND #PWR0104
+U 1 1 57F8CD21
+P 8400 3075
+AR Path="/5581205B/57F76589/57F8CD21" Ref="#PWR0104"  Part="1" 
+AR Path="/5581205B/5E27E227/57F76589/57F8CD21" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 8400 2825 50  0001 C CNN
+F 1 "GND" V 8405 2947 50  0000 R CNN
+F 2 "" H 8400 3075 50  0000 C CNN
+F 3 "" H 8400 3075 50  0000 C CNN
+	1    8400 3075
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8400 3075 7900 3075
+Text HLabel 8450 2075 2    60   Output ~ 0
+MCU_IRQ
+Text HLabel 8450 2175 2    60   Output ~ 0
+CTRLR_COPI_CAP1
+Wire Wire Line
+	7900 2075 8450 2075
+Wire Wire Line
+	7900 2175 8450 2175
+Wire Wire Line
+	8450 3575 7900 3575
+Wire Wire Line
+	7900 3675 8450 3675
+Wire Wire Line
+	8450 3775 7900 3775
+Wire Wire Line
+	7900 3875 8450 3875
+Text HLabel 6850 1275 1    60   Input ~ 0
+PRPHL_PCLK
+Wire Wire Line
+	6650 1275 6650 1375
+Wire Wire Line
+	6850 1275 6850 1375
+Text HLabel 6150 1300 1    60   BiDi ~ 0
+CONFIG_SEL
+Text HLabel 5950 1300 1    60   Input ~ 0
+NCONFIG
+Text HLabel 5150 1300 1    60   Input ~ 0
+PRPHL_COPI
+Text HLabel 5050 1300 1    60   BiDi ~ 0
+NSTATUS
+Text HLabel 4650 1300 1    60   BiDi ~ 0
+CONF_DONE
+Wire Wire Line
+	4650 1300 4650 1375
+Wire Wire Line
+	5050 1300 5050 1375
+Wire Wire Line
+	5150 1300 5150 1375
+Wire Wire Line
+	6150 1300 6150 1375
+Wire Wire Line
+	5950 1300 5950 1375
+Text HLabel 2850 3250 0    60   Input ~ 0
+TMS
+Text HLabel 2850 3350 0    60   Input ~ 0
+TCLK
+Text HLabel 2850 3450 0    60   Input ~ 0
+TDI
+Text HLabel 2850 3550 0    60   Output ~ 0
+TDO
+Wire Wire Line
+	2850 3250 3050 3250
+Wire Wire Line
+	3050 3350 2850 3350
+Wire Wire Line
+	2850 3450 3050 3450
+Wire Wire Line
+	3050 3550 2850 3550
+Wire Wire Line
+	6450 6450 5850 6450
+Wire Wire Line
+	4950 550  6050 550 
+Text HLabel 6650 1275 1    60   Output ~ 0
+PRPHL_CIPO
+Text Notes 600  1125 0    50   ~ 0
+Design Note: All of these external pins are for support of other\npackaging variants of the 10M02 FPGA. The E144 variant uses the\nVCC_ONE power supply scheme in which only the I/O supply needs\nto be supplied to the FPGA.
+Wire Notes Line
+	575  775  575  1175
+Wire Notes Line
+	575  1175 3250 1175
+Wire Notes Line
+	3250 1175 3250 775 
+Wire Notes Line
+	3250 775  575  775 
+Text Notes 600  7900 0    100  ~ 0
+Schematic Summary: FPGA_CORE\nThe purpose of this schematic is to \ntake the huge 10M02 FPGA E144 \npackage variant symbol and to shrink \nit down to the few pins that are actually \nused. One can see that the pin usage on \nthis FPGA can also be applied to the \nlower-cost 36-pin WLCSP packaging variant \nof the 10M02 FPGA when lower trace/space \ndesign rules can be obtained from the PCB\nfabricator.
+Wire Notes Line
+	550  6150 550  7950
+Wire Notes Line
+	550  7950 4125 7950
+Wire Notes Line
+	4125 7950 4125 7250
+Wire Notes Line
+	4125 7250 3850 7250
+Wire Notes Line
+	3850 7250 3850 6600
+Wire Notes Line
+	3850 6600 3450 6600
+Wire Notes Line
+	3450 6600 3450 6150
+Wire Notes Line
+	3450 6150 550  6150
+Text Notes 8250 1475 0    50   ~ 0
+Design Note: The single-supply part FPGA\nvariant was selected due to part actually\nbeing available at the time.
+Text Notes 8350 950  0    50   ~ 0
+Design Note: The MPN of the part \ninstalled here was 10M02SCE144C8G
+Wire Notes Line
+	8300 750  8300 1025
+Wire Notes Line
+	8300 1025 9825 1025
+Wire Notes Line
+	9825 1025 9825 750 
+Wire Notes Line
+	9825 750  8300 750 
+Wire Notes Line
+	8200 1200 8200 1550
+Wire Notes Line
+	8200 1550 9925 1550
+Wire Notes Line
+	9925 1550 9925 1200
+Wire Notes Line
+	9925 1200 8200 1200
+$EndSCHEMATC

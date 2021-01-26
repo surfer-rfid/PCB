@@ -1,0 +1,442 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 17
+Title "RFIDr Top Level"
+Date "2019-12-04"
+Rev "A"
+Comp "Superlative Semiconductor LLC"
+Comment1 "Copyright 2021 Superlative Semiconductor LLC."
+Comment2 "Licensed under CERN-OHL-P v2 or later."
+Comment3 "This source provided WITHOUT ANY EXPRESS OR IMPLIED WARRANTY."
+Comment4 "Author: E. Keehr"
+$EndDescr
+$Sheet
+S 3400 1100 3025 3750
+U 5581205B
+F0 "RFIDr_Open_DigBB" 60
+F1 "RFIDr_Open_DigBB.sch" 60
+F2 "PGOODB" I L 3400 1325 60 
+F3 "CHGB" I L 3400 1450 60 
+F4 "VBAT" I L 3400 1200 60 
+F5 "RFPA_VCB" O R 6425 3150 60 
+F6 "RFPA_VCA" O R 6425 3025 60 
+F7 "EN_VDD_PA" O R 6425 3275 60 
+F8 "EN_VDD_1P2" O L 3400 1575 60 
+F9 "DIO2" I R 6425 4575 60 
+F10 "DIO3" I R 6425 4450 60 
+F11 "XO_ENABLE" O R 6425 4200 60 
+F12 "RDIO_RST_P" O R 6425 4325 60 
+F13 "CTRLR_COPI_CAP3" O R 6425 1575 60 
+F14 "CTRLR_COPI_CAP2" O R 6425 1450 60 
+F15 "CTRLR_NPS_DTC" O R 6425 1825 60 
+F16 "CTRLR_NPS_RDIO" O R 6425 1950 60 
+F17 "CTRLR_COPI_CAP0_RDIO" O R 6425 1200 60 
+F18 "CLK_36_IN" I R 6425 2550 60 
+F19 "IN_Q" I R 6425 2800 60 
+F20 "IN_I" I R 6425 2675 60 
+F21 "CTRLR_COPI_CAP1" O R 6425 1325 60 
+F22 "CTRLR_PCLK" O R 6425 2075 60 
+F23 "OUT_Q" O R 6425 2425 60 
+F24 "OUT_I" O R 6425 2300 60 
+F25 "CTRLR_CIPO" I R 6425 1700 60 
+F26 "ANT0" O R 6425 3775 60 
+F27 "ANT1" O R 6425 3900 60 
+F28 "RSSI_DET" I R 6425 3525 60 
+F29 "OPA_SPDT1_CTL" O R 6425 3400 60 
+$EndSheet
+Text Label 2550 1325 0    60   ~ 0
+PGOODB
+Text Label 2600 1450 0    60   ~ 0
+CHGB
+$Sheet
+S 750  1100 1425 600 
+U 559357D6
+F0 "RFIDr_Open_PMU" 60
+F1 "RFIDr_Open_PMU.sch" 60
+F2 "PGOODB" O R 2175 1325 60 
+F3 "CHGB" O R 2175 1450 60 
+F4 "EN_VDD_1P2" I R 2175 1575 60 
+F5 "VBAT" O R 2175 1200 60 
+$EndSheet
+Text Label 2625 1200 0    60   ~ 0
+VBAT
+Text Label 3025 1575 2    60   ~ 0
+EN_VDD_1P2
+Text Label 6750 3275 0    60   ~ 0
+EN_VDD_PA
+Text Label 6775 3025 0    60   ~ 0
+RFPA_VCA
+Text Label 6775 3150 0    60   ~ 0
+RFPA_VCB
+Text Label 6775 4200 0    60   ~ 0
+XO_ENABLE
+Text Label 6750 4325 0    60   ~ 0
+RDIO_RST_P
+Text Label 6725 2300 0    60   ~ 0
+FPGA_OUT_I
+Text Label 6725 2425 0    60   ~ 0
+FPGA_OUT_Q
+Text Label 6900 3775 0    60   ~ 0
+ANT0
+Text Label 6900 3900 0    60   ~ 0
+ANT1
+Text Label 6500 1200 0    60   ~ 0
+CTRLR_COPI_CAP0_RDIO
+Text Label 6675 2075 0    60   ~ 0
+CTRLR_PCLK
+Text Label 6625 1950 0    60   ~ 0
+CTRLR_NPS_RDIO
+Text Label 6650 1825 0    60   ~ 0
+CTRLR_NPS_DTC
+Text Label 6625 1325 0    60   ~ 0
+CTRLR_COPI_CAP1
+Text Label 6600 1450 0    60   ~ 0
+CTRLR_COPI_CAP2
+Text Label 6600 1575 0    60   ~ 0
+CTRLR_COPI_CAP3
+Text Label 6950 4575 0    60   ~ 0
+DIO2
+Text Label 6950 4450 0    60   ~ 0
+DIO3
+Text Label 6775 2675 0    60   ~ 0
+FPGA_IN_I
+Text Label 6775 2800 0    60   ~ 0
+FPGA_IN_Q
+Text Label 6625 2550 0    60   ~ 0
+FPGA_CLK_36_IN
+Text Label 6750 1700 0    60   ~ 0
+CTRLR_CIPO
+Text Label 6800 3525 0    60   ~ 0
+RSSI_DET
+Text Label 6600 3400 0    60   ~ 0
+OPA_SPDT1_CTL
+$Comp
+L RFIDr_Open_Lib:MountingHole U34
+U 1 1 57FE28A0
+P 1200 5700
+F 0 "U34" H 1200 5700 60  0000 L CNN
+F 1 "MountingHole" V 1100 5100 60  0000 L CNN
+F 2 "RFIDr_Open:MountingHole_2.2mm" H 1200 5700 60  0001 C CNN
+F 3 "" H 1200 5700 60  0001 C CNN
+	1    1200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 57FE2E07
+P 1250 6200
+F 0 "#PWR03" H 1250 5950 50  0001 C CNN
+F 1 "GND" H 1250 6050 50  0000 C CNN
+F 2 "" H 1250 6200 60  0000 C CNN
+F 3 "" H 1250 6200 60  0000 C CNN
+	1    1250 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:MountingHole U35
+U 1 1 57FE427D
+P 1575 5700
+F 0 "U35" H 1575 5700 60  0000 L CNN
+F 1 "MountingHole" V 1500 5100 60  0000 L CNN
+F 2 "RFIDr_Open:MountingHole_2.2mm" H 1575 5700 60  0001 C CNN
+F 3 "" H 1575 5700 60  0001 C CNN
+	1    1575 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 57FE4283
+P 1625 6200
+F 0 "#PWR04" H 1625 5950 50  0001 C CNN
+F 1 "GND" H 1625 6050 50  0000 C CNN
+F 2 "" H 1625 6200 60  0000 C CNN
+F 3 "" H 1625 6200 60  0000 C CNN
+	1    1625 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:MountingHole U36
+U 1 1 57FE45AA
+P 1950 5700
+F 0 "U36" H 1950 5700 60  0000 L CNN
+F 1 "MountingHole" V 1850 5100 60  0000 L CNN
+F 2 "RFIDr_Open:MountingHole_2.2mm" H 1950 5700 60  0001 C CNN
+F 3 "" H 1950 5700 60  0001 C CNN
+	1    1950 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR05
+U 1 1 57FE45B0
+P 2000 6200
+F 0 "#PWR05" H 2000 5950 50  0001 C CNN
+F 1 "GNDA" H 2000 6050 50  0000 C CNN
+F 2 "" H 2000 6200 60  0000 C CNN
+F 3 "" H 2000 6200 60  0000 C CNN
+	1    2000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:MountingHole U37
+U 1 1 57FE45B7
+P 2325 5700
+F 0 "U37" H 2325 5700 60  0000 L CNN
+F 1 "MountingHole" V 2225 5100 60  0000 L CNN
+F 2 "RFIDr_Open:MountingHole_2.2mm" H 2325 5700 60  0001 C CNN
+F 3 "" H 2325 5700 60  0001 C CNN
+	1    2325 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:MountingHole U38
+U 1 1 57FE48AC
+P 2700 5700
+F 0 "U38" H 2700 5700 60  0000 L CNN
+F 1 "MountingHole" V 2600 5100 60  0000 L CNN
+F 2 "RFIDr_Open:MountingHole_2.2mm" H 2700 5700 60  0001 C CNN
+F 3 "" H 2700 5700 60  0001 C CNN
+	1    2700 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR06
+U 1 1 57FE4DE6
+P 2375 6200
+F 0 "#PWR06" H 2375 5950 50  0001 C CNN
+F 1 "GNDA" H 2375 6050 50  0000 C CNN
+F 2 "" H 2375 6200 60  0000 C CNN
+F 3 "" H 2375 6200 60  0000 C CNN
+	1    2375 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR07
+U 1 1 57FE4F68
+P 2750 6200
+F 0 "#PWR07" H 2750 5950 50  0001 C CNN
+F 1 "GNDA" H 2750 6050 50  0000 C CNN
+F 2 "" H 2750 6200 60  0000 C CNN
+F 3 "" H 2750 6200 60  0000 C CNN
+	1    2750 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:FIDUCIAL FID1
+U 1 1 5811FDCC
+P 1575 7175
+F 0 "FID1" H 1753 7228 60  0000 L CNN
+F 1 "FIDUCIAL" H 1753 7122 60  0000 L CNN
+F 2 "RFIDr_Open:RFIDr_Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1650 7175 60  0001 C CNN
+F 3 "" H 1650 7175 60  0001 C CNN
+	1    1575 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:FIDUCIAL FID3
+U 1 1 58120506
+P 2300 7175
+F 0 "FID3" H 2478 7228 60  0000 L CNN
+F 1 "FIDUCIAL" H 2478 7122 60  0000 L CNN
+F 2 "RFIDr_Open:RFIDr_Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 2375 7175 60  0001 C CNN
+F 3 "" H 2375 7175 60  0001 C CNN
+	1    2300 7175
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:FIDUCIAL FID2
+U 1 1 581206BF
+P 1575 7600
+F 0 "FID2" H 1753 7653 60  0000 L CNN
+F 1 "FIDUCIAL" H 1753 7547 60  0000 L CNN
+F 2 "RFIDr_Open:RFIDr_Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1650 7600 60  0001 C CNN
+F 3 "" H 1650 7600 60  0001 C CNN
+	1    1575 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L RFIDr_Open_Lib:FIDUCIAL FID4
+U 1 1 58120879
+P 2300 7600
+F 0 "FID4" H 2478 7653 60  0000 L CNN
+F 1 "FIDUCIAL" H 2478 7547 60  0000 L CNN
+F 2 "RFIDr_Open:RFIDr_Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 2375 7600 60  0001 C CNN
+F 3 "" H 2375 7600 60  0001 C CNN
+	1    2300 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2175 1325 3400 1325
+Wire Wire Line
+	2175 1450 3400 1450
+Wire Wire Line
+	2175 1575 3400 1575
+Wire Wire Line
+	2175 1200 3400 1200
+Wire Wire Line
+	6425 3275 7675 3275
+Wire Wire Line
+	6425 3025 7675 3025
+Wire Wire Line
+	7675 3150 6425 3150
+Wire Wire Line
+	6425 4200 7675 4200
+Wire Wire Line
+	7675 4325 6425 4325
+Wire Wire Line
+	6425 3775 7675 3775
+Wire Wire Line
+	6425 3900 7675 3900
+Wire Wire Line
+	6425 2075 7675 2075
+Wire Wire Line
+	6425 1825 7675 1825
+Wire Wire Line
+	6425 1950 7675 1950
+Wire Wire Line
+	7675 1200 6425 1200
+Wire Wire Line
+	7675 1325 6425 1325
+Wire Wire Line
+	6425 1450 7675 1450
+Wire Wire Line
+	7675 1575 6425 1575
+Wire Wire Line
+	6425 3400 7675 3400
+Wire Wire Line
+	1250 6100 1250 6200
+Wire Wire Line
+	1625 6100 1625 6200
+Wire Wire Line
+	2000 6100 2000 6200
+Wire Wire Line
+	2375 6100 2375 6200
+Wire Wire Line
+	2750 6100 2750 6200
+Wire Wire Line
+	6425 1700 7675 1700
+Wire Wire Line
+	6425 2300 7675 2300
+Wire Wire Line
+	6425 2425 7675 2425
+Wire Wire Line
+	6425 2550 7675 2550
+Wire Wire Line
+	7675 2675 6425 2675
+Wire Wire Line
+	6425 2800 7675 2800
+Wire Wire Line
+	7675 3525 6425 3525
+Wire Wire Line
+	7675 4450 6425 4450
+Wire Wire Line
+	6425 4575 7675 4575
+$Sheet
+S 7675 1100 2675 3725
+U 55812062
+F0 "RFIDr_Open_Radio" 60
+F1 "RFIDr_Open_Radio.sch" 60
+F2 "EN_VDD_PA" I L 7675 3275 60 
+F3 "VAPC2" I L 7675 3150 60 
+F4 "VAPC1" I L 7675 3025 60 
+F5 "CTRLR_NPS_RDIO" I L 7675 1950 60 
+F6 "CTRLR_COPI_CAP0_RDIO" I L 7675 1200 60 
+F7 "CTRLR_CIPO" O L 7675 1700 60 
+F8 "CTRLR_PCLK" I L 7675 2075 60 
+F9 "DIO2" O L 7675 4575 60 
+F10 "DIO3" O L 7675 4450 60 
+F11 "RSSI_OUT" O L 7675 3525 60 
+F12 "CTRLR_COPI_CAP1" I L 7675 1325 60 
+F13 "CTRLR_COPI_CAP2" I L 7675 1450 60 
+F14 "CTRLR_COPI_CAP3" I L 7675 1575 60 
+F15 "CTRLR_NPS_DTC" I L 7675 1825 60 
+F16 "RST_RDIO_P" I L 7675 4325 60 
+F17 "CLK_OUT" O L 7675 2550 60 
+F18 "Q_OUT" O L 7675 2800 60 
+F19 "I_OUT" O L 7675 2675 60 
+F20 "I_IN" I L 7675 2300 60 
+F21 "Q_IN" I L 7675 2425 60 
+F22 "XO_ENABLE" I L 7675 4200 60 
+F23 "ANT0" I L 7675 3775 60 
+F24 "ANT1" I L 7675 3900 60 
+F25 "EN_RSSI" I L 7675 3400 60 
+$EndSheet
+Text Notes 775  1525 0    60   ~ 0
+Power Management\n(Battery/Charging &\nLDO Regulators)
+Wire Notes Line
+	4300 1100 4300 4850
+Wire Notes Line
+	6425 2200 4300 2200
+Wire Notes Line
+	6425 2900 4300 2900
+Wire Notes Line
+	6425 3650 4300 3650
+Wire Notes Line
+	6425 4050 4300 4050
+Wire Notes Line
+	7675 2200 10350 2200
+Wire Notes Line
+	7675 2900 10350 2900
+Wire Notes Line
+	7675 3650 10350 3650
+Wire Notes Line
+	7675 4050 10350 4050
+Text Notes 3575 2025 0    60   ~ 0
+MCU Power \nManagement \nInterface
+Text Notes 4425 1775 0    60   ~ 0
+FPGA SPI Bridge\nInterface to SDR ASIC\nand DTC-Based TMN
+Text Notes 4425 2650 0    60   ~ 0
+FPGA 1-bit Digital I/Q\nInterface to SDR ASIC
+Text Notes 4450 3375 0    60   ~ 0
+MCU Interface to\nPower Amplifier (PA) and\nPA RSSI Detector
+Text Notes 4450 3975 0    60   ~ 0
+MCU Interface to\nAntenna Diversity\nSwitch
+Text Notes 4450 4525 0    60   ~ 0
+MCU Interface to\nSDR ASIC Direct\nDigital Interface
+Text Notes 8900 1775 0    60   ~ 0
+FPGA SPI Bridge\nInterface to SDR ASIC\nand DTC-Based TMN
+Text Notes 8900 2625 0    60   ~ 0
+FPGA 1-bit Digital I/Q\nInterface to SDR ASIC
+Text Notes 8900 3375 0    60   ~ 0
+MCU Interface to\nPower Amplifier (PA) and\nPA RSSI Detector
+Text Notes 8900 3975 0    60   ~ 0
+MCU Interface to\nAntenna Diversity\nSwitch
+Text Notes 8900 4525 0    60   ~ 0
+MCU Interface to\nSDR ASIC Direct\nDigital Interface
+Wire Notes Line
+	925  5350 925  6500
+Wire Notes Line
+	925  6500 3025 6500
+Wire Notes Line
+	3025 6500 3025 5350
+Wire Notes Line
+	3025 5350 925  5350
+Text Notes 1275 5475 0    60   ~ 0
+Mounting Holes for Standoffs
+Wire Notes Line
+	925  6700 925  7900
+Wire Notes Line
+	925  7900 3025 7900
+Wire Notes Line
+	3025 7900 3025 6700
+Wire Notes Line
+	3025 6700 925  6700
+Text Notes 1325 6950 0    60   ~ 0
+Fiducials for Pick and Place \nAssembly Alignment
+Text Notes 3400 850  0    60   ~ 0
+RFIDr Digital Baseband: MCU with BTLE, FPGA, Buttons, Headers, \nand Associated Circuits
+Text Notes 7675 850  0    60   ~ 0
+RFIDr Radio: SDR, PA, RSSI Detector, TMN, Antenna Ports,\nand Associated Circuits.
+Text Notes 3450 6300 0    100  ~ 0
+Schematic Summary: Top Level\nThis is the top level of the RFIDr reader design.\nSubschematics are:\n-PMU (Power Management Unit)\n-Digital Baseband (MCU, FPGA, other associated circuits)\n-Radio (Software-Defined Radio, Power Amplifier, Tunable Microwave Network, etc.)
+Wire Notes Line
+	3325 5275 3325 6500
+Wire Notes Line
+	3325 6500 10075 6500
+Wire Notes Line
+	10075 6500 10075 5275
+Wire Notes Line
+	10075 5275 3325 5275
+$EndSCHEMATC
