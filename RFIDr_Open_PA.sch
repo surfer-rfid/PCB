@@ -615,7 +615,7 @@ L Device:C_Small C67
 U 1 1 5E3222AA
 P 9850 6150
 F 0 "C67" H 9860 6220 50  0000 L CNN
-F 1 "100n" H 9860 6070 50  0000 L CNN
+F 1 "DNI" H 9860 6070 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0402" V 9750 6175 30  0000 C CNN
 F 3 "" H 9850 6150 60  0000 C CNN
 	1    9850 6150
@@ -995,7 +995,7 @@ Wire Notes Line
 Wire Notes Line
 	4125 6150 650  6150
 Text Notes 4275 6475 0    50   ~ 0
-Design Note: HHM22106 is a directional coupler and MAX2204 is a power\nsensor. The RSSI OUT signal is sent back to the ADC onboard the MCU.\nThis feature has not been tested; it was installed as a back-up option\nfor a feedback sensor to drive the reflected power canceller TX cancellation\nalgorithm. This feature could also potentially be used to sense output power\nlevels in excess of regulatory requirements, although it is anticipated that\nsuch usage is not necessary.
+Design Note: HHM22106 is a directional coupler and MAX2204 is a power\nsensor. The RSSI OUT signal is sent back to the ADC onboard the MCU.\nThis feature is now used as part of the SX1257 DAC DC offset calibration\nprocedure. Keeping C67 DNI or at a low value << 100nF is important for\nthis calibration procedure to work.
 Wire Notes Line
 	4225 5850 4225 6525
 Wire Notes Line
