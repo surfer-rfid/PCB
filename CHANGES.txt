@@ -14,3 +14,7 @@ Changes: Initial Open Source Release
 04-08-2024:
 Author: E. Keehr (Superlative Semiconductor LLC)
 Changes: DNI C67 and add notes regarding the use of the RF PA output power sensor.
+
+11-29-2024:
+Author: E. Keehr (Superlative Semiconductor LLC)
+Changes: Change value of C126 to 1nF in schematic (it was already 1nF in the BOM).

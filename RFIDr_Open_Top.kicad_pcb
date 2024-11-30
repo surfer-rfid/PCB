@@ -2058,7 +2058,7 @@
     (fp_text reference C126 (at -0.033572 0.041651) (layer F.SilkS)
       (effects (font (size 0.5 0.5) (thickness 0.1)))
     )
-    (fp_text value 100n (at 0 1.7) (layer F.Fab)
+    (fp_text value 1n (at 0 1.7) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -0.5 0.25) (end -0.5 -0.25) (layer F.Fab) (width 0.15))
